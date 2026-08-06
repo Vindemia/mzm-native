@@ -1,71 +1,79 @@
 # TODO — tâches immédiates
 
-Détail exécutable du jalon en cours défini dans `ROADMAP.md`. Vidé/réécrit au fur et à mesure qu'un jalon est acquis et qu'on passe au suivant.
+Détail exécutable du jalon en cours défini dans `ROADMAP.md`. Vidé/réécrit au fur et à mesure qu'un jalon est acquis et qu'on passe au suivant. Le détail du jalon 1 (acquis le 2026-08-06) est dans l'historique git, commit `60751c97`.
 
-## Jalon en cours : 1 — Ça compile pour un compilateur hôte
+## Jalon en cours : 2 — Ça tourne sans crash
 
-**Definition of done** : `tools/native/verify.sh` sort avec le code 0. Ce script vérifie **deux** choses, pas une :
-1. `make REGION=eu check` → sha1 de `mzm_eu.gba` inchangé (preuve qu'on n'a pas cassé le decomp).
-2. Compilation native des 654 `.c` de `src/` → exit 0.
+**But** : un exécutable natif qui initialise le jeu et fait tourner sa boucle principale en continu à ~59,7275 Hz, même si rien ne s'affiche.
 
-Rien d'autre ne compte comme "jalon 1 acquis". Pas de link natif à ce stade (objets `.o` uniquement) — l'exécutable est le jalon 2.
+### Definition of done
 
-**Contrainte structurante** : aucune modification de la logique de jeu. Toute intervention dans `src/`/`include/` est soit un `#ifdef NATIVE` autour d'un accès plateforme, soit rien. Le sha1 de l'étape 1 est ce qui rend cette contrainte vérifiable au lieu d'être une intention.
+`tools/native/verify.sh` étendu à **cinq** étapes, toutes vertes :
 
-### P0 — Environnement (prérequis, aucun code) ✅
+1. `make REGION=eu check` — sha1 de `mzm_eu.gba` inchangé *(acquis, ne jamais casser)*.
+2. Compilation native des 654 `.c` → exit 0 *(acquis)*.
+3. **Édition de liens** → un binaire est produit.
+4. **Progression** : le binaire tourne N=600 frames (10 s), sort en 0, et un compteur de frames instrumenté atteint bien 600, sous timeout strict.
+5. **Déterminisme** : deux exécutions identiques produisent le même hash d'état mémoire par frame.
 
-- [x] ROM EU copiée en `mzm_eu_baserom.gba`, sha1 `0fd107445a42e6f3a3e5ce8c865f412583179903` conforme à `mzm_eu.sha1`.
-- [x] `python3 tools/extractor.py -r eu` → `data/` et `include/extracted/` peuplés.
-- [x] Toolchain GBA : `arm-none-eabi-binutils-cs` 2.45 + `agbcc` (**fork `jiangzhengwenjz`**, pas `pret` — voir `STACK.md`) dans `tools/agbcc/`.
-- [x] `make REGION=eu check` → `mzm_eu.gba: Réussi`, exit 0. **Le filet de sécurité est opérationnel.**
+Pourquoi les étapes 4 et 5 sont formulées comme ça, plutôt que « ça ne segfault pas » comme le prévoyait `ROADMAP.md` :
 
-### T1 — Le test avant le code ✅
+- « Ne pas crasher » est satisfait par un **processus qui boucle à l'infini**. Sans compteur de frames ni timeout, un jeu bloqué à attendre un flag d'interruption jamais levé passerait le test. Le compteur prouve la progression, pas seulement la survie.
+- Le déterminisme n'est pas du luxe : c'est le **prérequis du jalon 4**, dont toute la vérification repose sur un diff mémoire frame à frame contre mGBA. Si le port dépend de mémoire non initialisée ou de l'ASLR, ce diff sera bruité et inexploitable. Le détecter maintenant coûte deux exécutions ; le détecter au jalon 4 coûte une chasse au fantôme.
 
-- [x] `tools/native/verify.sh` écrit avant le squelette de build. Rouge au départ, comme attendu.
+En complément, non bloquant pour la DoD mais à faire tourner : une cible de build **ASan + UBSan**. Elle attrape immédiatement la classe de bugs de troncature LP64 identifiée au jalon 1, qui est précisément silencieuse autrement.
 
-### T2 — Squelette de build natif ✅
+### J2-T0 — Purger la dette LP64 (avant toute exécution)
 
-- [x] `Makefile.native` séparé, `Makefile` GBA intact (diff vide vérifié). `gcc`, `-DREGION_EU -DNATIVE -nostdinc -Iinclude/`, pipeline `preproc.py` → `cpp` → `gcc -c`, objets dans `build/native/`.
-- [x] ASM ARM exclu de fait (on ne compile que les `.c` de `src/`).
-- [x] `SHELL := /bin/bash` + `.SHELLFLAGS := -o pipefail -c` : sans ça, un échec de `preproc.py` en tête de pipe serait masqué par le code de sortie de `gcc` → faux verts.
+- [ ] `SramWriteChecked` (`include/sram/sram.h:9`) retourne `u8*` mais est appelée sans déclaration en contexte booléen (`src/save_file.c:890,901`) → en LP64 le retour implicite `int` tronque l'adresse et peut **inverser la condition**. Corriger par l'`#include` manquant, pas par un cast.
+- [ ] Repasser sur les 309 fonctions implicitement déclarées (`docs/ai/native-blockers.md`) : re-contrôler qu'aucune autre ne retourne un pointeur maintenant qu'on va exécuter le code.
 
-### T3 — Passe de mesure (constater, pas corriger) ✅
+Fait en premier délibérément : ce bug ne produit aucun message et se manifesterait comme un comportement erratique au milieu du jalon 2, quand dix autres choses seront neuves et suspectes.
 
-- [x] 654 fichiers mesurés : 492 compilent, 162 échouent. 1305 erreurs, 714 avertissements, 8 catégories. Log : `build/native/diagnostics.log`.
-- [x] **x86_64 retenu** (D007). Les 684 troncatures de pointeur viennent à 92 % de la seule macro `DMA_SET` (`include/gba/dma.h`), 7 % du moteur audio (jalon 5), 1 % du hack SRAM. **0 site confirmé en logique de jeu** → x86_64 ne coûte rien, et `-m32` fermerait la porte à ARM64.
-- [x] Inventaire actionnable : `docs/ai/native-blockers.md`.
-- [x] Découverte majeure : le blocage n°1 (1170 occ., 148 fichiers) n'est **pas** un problème de plateforme mais de dialecte — GCC ≥14 fait de `implicit-function-declaration` une erreur (C23) alors que le decomp est du C89. `-std=gnu89` le corrige sans toucher aux sources.
+### J2-T1 — Le test avant le code
 
-### T4 — Couche de compatibilité minimale (stubs, pas d'implémentation) ✅
+- [ ] Étendre `tools/native/verify.sh` aux étapes 3, 4, 5. Rouge au départ, comme au jalon 1.
+- [ ] Décider comment le binaire expose son compteur de frames et son hash d'état (variable d'environnement, argument `--frames N`, sortie sur stdout). Rester minimal — c'est de l'instrumentation de test, pas une fonctionnalité.
 
-- [x] `-std=gnu89` dans `Makefile.native` → 148 fichiers débloqués, **zéro source touchée**. C'est le dialecte réel du decomp (agbcc est C89), pas un contournement.
-- [x] `DMA_SET` réécrit sous `#ifdef NATIVE` (`include/gba/dma.h`) → ~629 casts pointeur→entier, **zéro fichier de gameplay touché**.
-- [x] `STATIC_ASSERT(sizeof(struct Sram) <= SRAM_SIZE)` désactivé sous `#ifdef NATIVE` (`include/structs/save_file.h`) → 43 fichiers. Struct non modifiée.
-- [x] Macro `SYSCALL(num)` neutralisée sous `#ifdef NATIVE` (`include/syscalls.h`) → 3 fichiers. **Non anticipé par T3** : elle embarque `asm("svc N")` en dur, mnémonique ARM que l'assembleur x86 refuse.
-- [x] 5 sites d'ASM inline stubés, chacun marqué `TODO(jalon 2)`.
-- [x] 89 symboles `static` → non-`static` dans 3 fichiers `src/data/` : incohérence de linkage réelle du decomp (`extern` dans le header, `static` dans le `.c`). **Seule modification de source inconditionnelle du jalon.** Vérifié par le relecteur : les lignes sont octet-pour-octet identiques une fois `static ` retiré, et le sha1 ROM tient après rebuild forcé.
-- [ ] ~~Registres matériel (`include/gba/memory.h`)~~ — **écart assumé, reporté au jalon 2**. `REG_BASE`/`VRAM_BASE`/etc. sont des `(void*)0x04...` utilisés comme **expressions constantes** dans des initialiseurs (`CAST_TO_ARRAY` de `include/structs/minimap.h`). Les rediriger vers de la mémoire allouée casserait ces initialiseurs, pour zéro bénéfice : la compilation passe déjà sans. Écart validé en relecture.
-- [ ] ~~Nommer le répertoire de la couche plateforme~~ — sans objet : le jalon n'a produit aucun fichier de plateforme, seulement des `#ifdef` dans les en-têtes existants. À reprendre au jalon 2, quand il y aura réellement du code à isoler.
+### J2-T2 — Passe de mesure : les symboles non résolus
 
-### T5 — Itération jusqu'au vert ✅
+Le pendant, à l'édition de liens, de la passe de mesure du jalon 1 — et le vrai gros morceau du jalon.
 
-- [x] **654/654 fichiers compilent** (départ : 492/654). 0 `error:`, 170 avertissements, tous classés jalon 2 ou 5.
-- [x] `tools/native/verify.sh` → **exit 0 sur les deux étapes**. Vérifié indépendamment par l'orchestrateur et par un agent relecteur distinct (dont un run après `clean` + rebuild forcé, pour écarter tout cache périmé).
+- [ ] Tenter le link, collecter **tous** les symboles indéfinis, les catégoriser par origine.
+- [ ] Origines attendues : le moteur audio M4A (entièrement en ASM ARM — `asm/audio_internal.s`, `asm/soundcode.s`, 644 `.s` dans `sound/`), les appels BIOS (`asm/syscalls.s`), le point d'entrée et les interruptions (`asm/crt0.s`, `asm/romheader.s`, `asm/intr_main.s`).
+- [ ] Livrable : inventaire chiffré dans `docs/ai/native-blockers.md`, actionnable fichier par fichier.
 
-### T6 — Capitaliser ✅
+### J2-T3 — Mapping mémoire
 
-- [x] Inventaire des symboles stubés + **section « Dette LP64 »** dans `docs/ai/native-blockers.md`.
-- [x] `STACK.md` mis à jour : gcc, `Makefile.native`, région EU, piège du fork agbcc.
-- [x] `DECISIONS.md` : D005 (région EU), D006 (sha1 dans la DoD), D007 (x86_64).
+- [ ] Rediriger `EWRAM_BASE`/`IWRAM_BASE`/`VRAM_BASE`/`OAM_BASE`/`PALRAM_BASE`/`REG_BASE` (`include/gba/memory.h`) vers de la mémoire réelle, sous `#ifdef NATIVE`.
+- [ ] **Contrainte identifiée au jalon 1** : ces macros servent d'**expressions constantes** dans des initialiseurs statiques (`CAST_TO_ARRAY` de `include/structs/minimap.h`). Un `malloc` est donc exclu. Piste à confirmer : des tableaux statiques (`static u8 gNativeEwram[EWRAM_SIZE]`), dont l'adresse reste une constante d'adresse valide en initialiseur statique.
 
-## Dette ouverte pour le jalon 2
+### J2-T4 — BIOS : implémenter, pas stuber
 
-- **`SramWriteChecked`** (`include/sram/sram.h:9`) retourne `u8*` mais est appelée sans déclaration en contexte booléen (`src/save_file.c:890,901`). En LP64, retour implicite `int` → **troncature silencieuse** qui peut inverser la condition. Seule des 309 fonctions implicitement déclarées à retourner un pointeur (re-vérifié indépendamment en relecture). À traiter **avant** toute exécution.
-- `DMA_SET` natif fait une copie mémoire respectant la taille d'élément, mais ignore `DMA_SRC_FIXED`/`DMA_DEST_FIXED`/`DMA_DEST_DEC`, les timings HBLANK/VBLANK et les interruptions DMA. Documenté sur place.
-- `src/sram/sram.c` : relocation de code auto-modifiant pour le timing flash, non stubée (compile déjà). À remplacer par une sauvegarde sur fichier.
-- `include/gba/memory.h` : mapping mémoire réel, cœur du jalon 2.
-- Moteur audio : ~47 sites de bit-packing d'adresses ROM `0x08xxxxxx`. Jalon 5, réécriture et non élargissement de type.
+- [ ] `Div`, `Sqrt`, `CpuSet`, `CpuFastSet`, `LZ77UnComp*`, `BitUnPack`, `RLUnComp`, `HuffUnComp` — à **réellement implémenter** en C portable.
+
+Écart assumé avec `ROADMAP.md`, qui prévoyait des stubs : un `Div` qui retourne 0 ne fait pas « tourner sans crash », il produit des divisions absurdes, des boucles infinies ou des indices hors bornes. Ces routines sont du calcul pur et de la copie mémoire, quelques dizaines de lignes chacune, sans dépendance matérielle. Les stuber coûterait plus cher en débogage que les écrire.
+
+### J2-T5 — Point d'entrée et boucle de frame
+
+- [ ] `main()` natif remplaçant `crt0.s` : initialiser la mémoire, appeler l'init du jeu, entrer dans la boucle.
+- [ ] Remplacer l'attente VBlank par un appel natif au gestionnaire enregistré (`src/callbacks.c`), cadencé à 59,7275 Hz.
+- [ ] Stub des autres interruptions — assez pour ne pas bloquer la boucle, pas plus.
+
+### J2-T6 — Symboles audio
+
+- [ ] Stubs vides pour tous les symboles du moteur M4A, chacun marqué `TODO(jalon 5)`. On ne réimplémente **rien** du son ici : on rend seulement le link possible.
+
+### J2-T7 — Itération jusqu'au vert
+
+- [ ] Boucle jusqu'aux 5 étapes vertes.
+- [ ] Passe ASan/UBSan propre.
+
+## Décisions ouvertes, à trancher au début du jalon 2
+
+- **`-nostdinc` et la libc.** Le build natif interdit aujourd'hui les en-têtes système, pour éviter les collisions avec les typedefs du decomp (`u8`, `TRUE`, `NULL`). Mais le jalon 2 a besoin de `malloc`/`memcpy`/`clock`. Piste : garder `-nostdinc` sur le code de jeu et l'autoriser sur les seuls fichiers de la couche plateforme. À trancher sur mesure, pas d'avance.
+- **Nommer le répertoire de la couche plateforme.** Reporté du jalon 1 faute de matière — le jalon 2 en produira vraiment. À logger dans `DECISIONS.md`.
 
 ## Bloqué par
 
-Rien. **Jalon 1 acquis**, prochaine étape : jalon 2 (`ROADMAP.md`).
+Rien.

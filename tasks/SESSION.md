@@ -1,29 +1,28 @@
 # SESSION — état de la session de travail en cours
 
-Ce fichier suit le travail **en cours**, pas terminé. Mis à jour au fur et à mesure de la session (pas seulement à la fin) pour pouvoir reprendre ce fichier à tout moment — reprise de session ou passage de relais — et savoir exactement où on en est. Vidé/réinitialisé au début d'une nouvelle session de travail (le travail terminé migre vers `TODO.md` coché ou `ROADMAP.md`, pas gardé ici).
+Ce fichier suit le travail **en cours**, pas terminé. Mis à jour au fur et à mesure de la session (pas seulement à la fin) pour pouvoir reprendre ce fichier à tout moment — reprise de session ou passage de relais — et savoir exactement où on en est. Vidé/réinitialisé au début d'une nouvelle session de travail.
 
-## Objectif de cette session
+## Session close — 2026-08-06
 
-Planifier puis exécuter le jalon 1 — « ça compile pour un compilateur hôte ». **Atteint.**
+**Jalon 1 acquis et commité.** Branche `jalon-1-compilation-native`, trois commits (`10657d70`, `60751c97`, `4657f2f2`). **Pas encore mergée dans `main`** — `git checkout main && git merge jalon-1-compilation-native` (fast-forward).
 
-## État : jalon 1 acquis
+Jalon 2 planifié dans `TODO.md`, aucune ligne de code écrite.
 
-`tools/native/verify.sh` → exit 0 sur ses deux étapes : sha1 de `mzm_eu.gba` conforme, et 654/654 `.c` de `src/` compilés en natif. Vérifié trois fois de façon indépendante (agent d'implémentation, orchestrateur, agent relecteur distinct — ce dernier après `clean` et rebuild forcé).
+## À reprendre à la prochaine session
 
-Détail complet coché dans `tasks/TODO.md`. Inventaire technique dans `docs/ai/native-blockers.md`.
+1. Merger la branche dans `main` (ou décider de continuer dessus).
+2. Décider si le hook `PostToolUse`/`Task` est activé — le script est prêt et testé (`.claude/hooks/post-task-disk-check.sh`), **non installé** : il manque l'entrée dans `.claude/settings.json` (snippet dans l'historique de conversation, ou à reconstruire depuis l'en-tête du script). Elrik a dit oui sur le principe.
+3. Attaquer J2-T0 (dette LP64) puis J2-T1 (étendre `verify.sh`) — dans cet ordre, le test avant le code.
 
-## Non commité
+## Décisions ouvertes pour le jalon 2
 
-Tout le travail du jalon 1 est en working tree, **rien n'est commité** — `git log` s'arrête au scaffolding (`5979f43a`). Signalé en relecture. À faire avant de fermer la session.
+- `-nostdinc` vs libc pour la couche plateforme (voir `TODO.md`).
+- Nom du répertoire de la couche plateforme — reporté du jalon 1 faute de matière.
 
-## Prochaine étape
+## Pour plus tard (jalon 3)
 
-Jalon 2 (`ROADMAP.md`) : un exécutable natif qui fait tourner la boucle de jeu sans crash. Commencer par la dette listée en bas de `TODO.md` — en particulier `SramWriteChecked`, dont la troncature LP64 doit être corrigée **avant** toute première exécution, sinon le premier bug du jalon 2 sera invisible et coûteux.
+**mGBA n'est pas empaqueté dans Fedora 44** (seul `libretro-mgba` existe, inutilisable comme oracle scriptable). Toute l'architecture de vérification des jalons 3+ en dépend. Options : Flatpak `io.mgba.mGBA` 0.10.5 (`flatpak install --user`, sans sudo, mais bac à sable à contourner pour les dumps) ou compilation depuis les sources.
 
-## Blocages en cours
+## Sudo anticipés
 
-Aucun.
-
-## Pour la suite du projet (pas jalon 2)
-
-**mGBA n'est pas empaqueté dans Fedora 44** (seul `libretro-mgba` existe, inutilisable comme oracle scriptable). Or l'architecture de vérification des jalons 3+ repose entièrement sur mGBA et son API Lua. Options : Flatpak `io.mgba.mGBA` 0.10.5 (`flatpak install --user`, sans sudo, mais bac à sable à contourner pour les dumps) ou compilation depuis les sources. À trancher au jalon 3.
+- Jalon 3 : `sudo dnf install -y sdl2-compat-devel` (seul le runtime SDL2 est installé, pas les en-têtes).

@@ -1,0 +1,63 @@
+# Makefile natif (jalon 1) — separe du Makefile GBA, qui n'est pas touche.
+#
+# But : faire passer chaque .c de src/ dans le meme pipeline de
+# preprocesseur que la cible GBA (preproc.py -> cpp -> compilateur),
+# jusqu'a l'objet .o, pour un compilateur hote (gcc). Pas d'edition de
+# liens ici (jalon 2) : `gcc -c` seulement.
+#
+# ASM ARM (asm/*.s, sound/**/*.s) exclu de fait : on ne compile que les
+# .c de src/, jamais les .s.
+
+SHELL := /bin/bash
+.SHELLFLAGS := -o pipefail -c
+.SUFFIXES:
+
+CC = gcc
+CPP = cpp
+PYTHON = python3
+PREPROC = $(PYTHON) tools/preproc.py
+PREPROCFLAGS = charmap.txt
+
+# Meme logique que le Makefile GBA : le decomp fournit ses propres
+# typedefs dans include/ (u8, u16, TRUE, NULL...), qui entrent en
+# collision avec les en-tetes systeme -> -nostdinc.
+# -std=gnu89 restaure le comportement C89/agbcc pour les appels de
+# fonction sans declaration prealable (avertissement, pas erreur) : le
+# decomp compte sur ce style K&R permissif. Voir docs/ai/native-blockers.md
+# categorie #1 et la section "Dette LP64" (fonctions concernees a
+# corriger au jalon 2, pas ici).
+CPPFLAGS = -DREGION_EU -DNATIVE -nostdinc -Iinclude/
+CFLAGS = -std=gnu89
+
+OBJDIR = build/native
+SRC := $(shell find src -name '*.c' | sort)
+OBJ := $(patsubst src/%.c,$(OBJDIR)/%.o,$(SRC))
+
+.PHONY: all
+all: $(OBJ)
+
+# preproc.py fait la substitution INCTEXT/SHIFT_JIS (texte -> tableau
+# d'entiers) avant que quoi que ce soit d'autre ne voie le fichier :
+# le C produit ne compile pas sans ce passage.
+# cpp fait la macro-expansion/#include (memes CPPFLAGS que le pipeline
+# GBA). gcc recoit ensuite du C deja preprocesse (-x cpp-output, lu sur
+# stdin via `-`) et ne fait que compiler -> objet, pas de re-preprocessing.
+$(OBJDIR)/%.o: src/%.c
+	@mkdir -p $(dir $@)
+	$(PREPROC) $< $(PREPROCFLAGS) | $(CPP) $(CPPFLAGS) | $(CC) -c -x cpp-output -o $@ $(CFLAGS) -
+
+# Passe de mesure (T3) : ne pas s'arreter a la premiere erreur, tout
+# compiler, et garder une trace complete des diagnostics pour la
+# categorisation ulterieure. Le sous-make est autorise a echouer (-)
+# pour que cette cible se termine toujours par exit 0.
+DIAGLOG = $(OBJDIR)/diagnostics.log
+
+.PHONY: diagnostics
+diagnostics:
+	@mkdir -p $(OBJDIR)
+	-$(MAKE) -k -f Makefile.native all > $(DIAGLOG) 2>&1
+	@echo "Diagnostics ecrits dans $(DIAGLOG)"
+
+.PHONY: clean
+clean:
+	rm -rf $(OBJDIR)

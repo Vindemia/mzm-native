@@ -36,6 +36,16 @@ Cette session (celle qui lit ce `CLAUDE.md`) ne fait **jamais** d'implémentatio
 3. L'orchestrateur lance un **second sous-agent, distinct**, pour relire le code et vérifier que la vérification déterministe définie en amont a bien été exécutée et passe.
 4. L'orchestrateur ne code pas, ne corrige pas de bug lui-même — il redirige vers un sous-agent si quelque chose ne va pas.
 
+### Chaque sous-agent tient sa part de la documentation, au fil de l'eau
+
+Un sous-agent ne rend pas seulement du code : il met à jour **sa** partie de `tasks/` et `docs/ai/` **pendant** son travail, pas à la fin. Ce n'est pas de la politesse documentaire — c'est ce qui rend le travail reprenable.
+
+Raison : l'état d'avancement vit dans le contexte du sous-agent et disparaît avec lui. S'il s'arrête en cours de route (plantage, limite, blocage), tout ce qui n'a pas été écrit sur disque est perdu, et son successeur repart de zéro. Écrire au fil de l'eau transforme un abandon en reprise.
+
+Conséquence pour l'orchestrateur : à la réception d'un rapport de sous-agent, il **vérifie ce qui a réellement été écrit sur disque**, pas seulement ce que le rapport affirme. Un rapport est une déclaration d'intention ; les fichiers sont la preuve.
+
+Corollaire : un sous-agent ne détruit pas les artefacts qui étayent ses propres chiffres (logs de diagnostics, sorties de mesure). S'il nettoie derrière lui, ses conclusions deviennent invérifiables et le travail est à refaire.
+
 ## Règle — proposer un hook après une bêtise évitable
 
 Si, en cours de session, Claude fait une erreur qui aurait pu être évitée par un hook (Claude Code hook — validation automatique avant/après une action), le noter. **En fin de session**, proposer ce hook à Elrik avec ce qu'il aurait empêché. Ne jamais l'installer soi-même — toujours à évaluer et valider par l'humain d'abord.

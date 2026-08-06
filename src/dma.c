@@ -189,6 +189,11 @@ void BitFill(u8 channel, u32 value, void *dst, u32 len, u8 bitSize)
         if ((dma & tmp5) != 0) goto loop3;
     }
 }
+#elif defined(NATIVE)
+// TODO(jalon 2): reimplementer BitFill (remplissage DMA) pour cible native.
+void BitFill(u8 channel, u32 value, void *dst, u32 len, u8 bitSize)
+{
+}
 #else
 NAKED_FUNCTION
 void BitFill(u8 channel, u32 value, void *dst, u32 len, u8 bitSize)

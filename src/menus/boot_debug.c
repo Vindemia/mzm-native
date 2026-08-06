@@ -1195,6 +1195,12 @@ void BootDebugSectionMapRoomOrDoorUpdated(u8 roomOrDoor)
         gCurrentRoom = pDoor->sourceRoom;
     }
 }
+#elif defined(NATIVE)
+// TODO(jalon 2): reimplementer BootDebugSectionMapRoomOrDoorUpdated pour
+// cible native.
+void BootDebugSectionMapRoomOrDoorUpdated(u8 roomOrDoor)
+{
+}
 #else // !NON_MATCHING
 NAKED_FUNCTION
 void BootDebugSectionMapRoomOrDoorUpdated(u8 roomOrDoor)

@@ -623,6 +623,13 @@ static u32 MultiBootHandshake(struct MultiBootData* pMultiBoot)
  * 
  * @param cycles Cycles to wait
  */
+#ifdef NATIVE
+// TODO(jalon 2): reimplementer MultiBootWaitCycles (attente calibree en
+// cycles CPU GBA) pour cible native.
+static void MultiBootWaitCycles(s32 cycles)
+{
+}
+#else
 NAKED_FUNCTION
 static void MultiBootWaitCycles(s32 cycles)
 {
@@ -661,6 +668,7 @@ static void MultiBootWaitCycles(s32 cycles)
         bx lr                        \n\
     ");
 }
+#endif
 
 /**
  * @brief 897d0 | 3c | Wait up to one frame for communication to be completed

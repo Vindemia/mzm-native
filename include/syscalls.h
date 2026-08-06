@@ -3,7 +3,14 @@
 
 #include "types.h"
 
+#ifdef NATIVE
+// Pas de BIOS GBA sur cible native : SWI est un no-op de compilation.
+// TODO(jalon 2): remplacer chaque site d'appel par l'equivalent natif
+// (ex: LZ77UncompVram/CpuSet -> memcpy/decompresseur logiciel).
+#define SYSCALL(num) ((void)0)
+#else
 #define SYSCALL(num) asm("svc " #num)
+#endif
 
 #define SYSCALL_SoftReset 0
 #define SYSCALL_RegisterRamReset 1

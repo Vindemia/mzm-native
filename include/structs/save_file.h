@@ -237,7 +237,14 @@ struct Sram {
 };
 
 // Make sure that the size of the sram struct doesn't exceed the size of the flash sram
+#ifndef NATIVE
+// La limite 32 Ko est une contrainte du flash SRAM physique de la GBA,
+// sans objet une fois la sauvegarde native sur fichier (jalon 2). En LP64,
+// struct EnvironmentalEffect.pOamFrame (include/structs/samus.h) passe de
+// 4 à 8 octets et fait dépasser struct Sram de 8 octets — voir
+// docs/ai/native-blockers.md catégorie #3.
 STATIC_ASSERT(sizeof(struct Sram) <= SRAM_SIZE, SramStructSize);
+#endif
 
 extern u8 gSramOperationStage;
 extern u8 gSramCorruptFlag;

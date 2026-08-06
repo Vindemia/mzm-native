@@ -34,14 +34,35 @@
 #define REG_DMA3_CNT_L (REG_DMA3 + 8)
 #define REG_DMA3_CNT_H (REG_DMA3 + 10)
 
-#define DMA_SET(channel, src, dst, cnt)                                        \
-    {                                                                          \
-        vu32 *dma_ = (vu32 *)REG_DMA##channel;                                 \
-        dma_[0]    = (vu32)src;                                                \
-        dma_[1]    = (vu32)dst;                                                \
-        dma_[2]    = (vu32)cnt;                                                \
-        dma_[2];                                                               \
+#ifdef NATIVE
+/* Sur cible native, il n'y a pas de registre DMA matériel : (vu32)src/dst
+ * tronquerait un pointeur 64 bits sur 32 bits (voir docs/ai/native-blockers.md
+ * catégorie #5/#6). Le DMA GBA n'est qu'une copie mémoire déguisée en écriture
+ * registre ; on fait directement la copie plutôt que d'émuler le registre.
+ * TODO(jalon 2): remplacer par une vraie implémentation si le comportement
+ * DMA (timing, HBLANK/VBLANK, fill) s'avère observable côté jeu. */
+#define DMA_SET(channel, src, dst, cnt)                                       \
+    {                                                                         \
+        u32 dmaCnt_ = (cnt);                                                  \
+        u32 dmaCount_ = dmaCnt_ & 0xFFFF;                                     \
+        u32 dmaCtrl_ = dmaCnt_ >> 16;                                         \
+        u32 dmaElemSize_ = (dmaCtrl_ & DMA_32BIT) ? 4 : 2;                    \
+        u32 dmaNBytes_ = dmaCount_ * dmaElemSize_;                            \
+        u8 *dmaDst_ = (u8 *)(dst);                                            \
+        const u8 *dmaSrc_ = (const u8 *)(src);                                \
+        while (dmaNBytes_-- != 0)                                            \
+            *dmaDst_++ = *dmaSrc_++;                                          \
     }
+#else
+#define DMA_SET(channel, src, dst, cnt)                                       \
+    {                                                                         \
+        vu32 *dma_ = (vu32 *)REG_DMA##channel;                                \
+        dma_[0]    = (vu32)src;                                               \
+        dma_[1]    = (vu32)dst;                                               \
+        dma_[2]    = (vu32)cnt;                                               \
+        dma_[2];                                                              \
+    }
+#endif
 
 #define DMA3_COPY_16(src, dst, count)                                          \
     DMA_SET(3, src, dst, C_32_2_16(DMA_ENABLE, count))

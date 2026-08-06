@@ -1446,6 +1446,12 @@ static u32 FileSelectCopyFileHandler(void)
 
     return ended;
 }
+#elif defined(NATIVE)
+// TODO(jalon 2): reimplementer FileSelectCopyFileHandler pour cible native.
+static u32 FileSelectCopyFileHandler(void)
+{
+    return 0;
+}
 #else
 NAKED_FUNCTION
 static u32 FileSelectCopyFileHandler(void)
@@ -6923,6 +6929,12 @@ static u32 FileSelectUpdateTilemap(TilemapRequest request)
     }
 
     return ended;
+}
+#elif defined(NATIVE)
+// TODO(jalon 2): reimplementer FileSelectUpdateTilemap pour cible native.
+static u32 FileSelectUpdateTilemap(TilemapRequest request)
+{
+    return 0;
 }
 #else
 NAKED_FUNCTION

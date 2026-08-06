@@ -69,3 +69,26 @@ Angle mort vérifié : une passe neutralisant la première cause de blocage (`-W
 - Correction au cas par cas dans chaque fichier de gameplay touché — écarté car inutile : la mesure montre que le nombre réel de sites en logique de jeu est nul une fois la classification par origine faite, pas par fichier appelant.
 
 **Raison** : le principe fondateur du projet (ne pas modifier la logique de jeu décompilée) aurait dû faire pencher vers `-m32` si les sites de troncature avaient été dispersés dans le gameplay. Ce n'est pas le cas : 99 % des sites mesurés sont concentrés dans une macro plateforme (`DMA_SET`) et deux sous-systèmes déjà prévus pour réécriture complète (audio jalon 5, SRAM T4). Les corriger en 64 bits coûte la même chose qu'en 32 bits — un remplacement de macro/fonction plateforme, zéro fichier `src/*.c` de gameplay modifié. Le seul site touchant une struct de sauvegarde/état de jeu (`EnvironmentalEffect.pOamFrame`) se résout par un `#ifdef NATIVE` sur une assertion devenue sans objet (contrainte de taille du flash SRAM physique), pas par une réécriture de la struct. x86_64 est donc retenu sans compromis sur la contrainte de non-régression du decomp, avec le bénéfice de rester portable ARM64 et de ne dépendre d'aucun paquet 32 bits pour SDL2 au jalon 3.
+
+## D008 — 2026-08-06 — `-nostdinc` conservé sur `src/`, en-têtes système autorisés sur la couche plateforme
+
+**Décision** : le code de jeu décompilé (`src/`) continue de compiler avec `-nostdinc -Iinclude/`, exactement comme la cible GBA. Les fichiers de la couche plateforme, eux, compilent avec les en-têtes système normaux. Deux jeux de flags dans `Makefile.native`.
+
+**Alternatives considérées** :
+- Tout garder `-nostdinc`, la couche plateforme redéclarant à la main les fonctions libc dont elle a besoin — écarté : tenable pour `memcpy`, intenable dès SDL2 au jalon 3, qu'on ne va pas redéclarer à la main.
+- Abandonner `-nostdinc` partout et corriger les collisions — écarté : c'est l'option risquée. Changer ce que voient les 654 fichiers de `src/` est précisément la façon dont une divergence subtile s'installe, et le sha1 de la ROM ne protège que la cible GBA, pas la sémantique native.
+
+**Raison** : tant que `src/` voit exactement les mêmes en-têtes dans les deux cibles, aucune divergence n'est possible par ce chemin. Le coût est d'une règle supplémentaire dans le Makefile.
+
+**Réserve connue** : à la couture, un fichier plateforme incluant à la fois `<stdio.h>` et `types.h` redéfinira `NULL`/`TRUE`. Garder mince la surface du code plateforme exposée aux en-têtes du decomp.
+
+## D009 — 2026-08-06 — La couche plateforme vit dans `platform/`, à la racine
+
+**Décision** : le code de la couche plateforme va dans un répertoire `platform/` à la racine du dépôt. (Lève la non-décision laissée ouverte dans `STACK.md` et reportée au jalon 1 faute de matière.)
+
+**Alternatives considérées** :
+- `src/platform/` — **techniquement impossible**. Vérifié empiriquement : le `Makefile` GBA collecte ses sources via `$(wildcard src/*/*.c)`, qui capte `src/platform/*.c` et les compilerait dans la ROM. Casserait le build GBA.
+- `native/` — écarté : décrit la cible, or tout le projet est « natif », le mot ne distingue rien.
+- `port/` — écarté : vague, ne dit pas que le dossier contient la couche de remplacement du matériel.
+
+**Raison** : au-delà de la contrainte technique ci-dessus, garder la couche plateforme hors de `src/` préserve l'invariant qui a servi tout le jalon 1 — « tout diff sous `src/` est suspect et doit être justifié ». `platform/` reprend le vocabulaire déjà employé dans `ARCHITECTURE.md`.

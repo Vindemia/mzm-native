@@ -69,10 +69,10 @@ Le pendant, à l'édition de liens, de la passe de mesure du jalon 1 — et le v
 - [ ] Boucle jusqu'aux 5 étapes vertes.
 - [ ] Passe ASan/UBSan propre.
 
-## Décisions ouvertes, à trancher au début du jalon 2
+## Décisions déjà tranchées (aucune question ouverte)
 
-- **`-nostdinc` et la libc.** Le build natif interdit aujourd'hui les en-têtes système, pour éviter les collisions avec les typedefs du decomp (`u8`, `TRUE`, `NULL`). Mais le jalon 2 a besoin de `malloc`/`memcpy`/`clock`. Piste : garder `-nostdinc` sur le code de jeu et l'autoriser sur les seuls fichiers de la couche plateforme. À trancher sur mesure, pas d'avance.
-- **Nommer le répertoire de la couche plateforme.** Reporté du jalon 1 faute de matière — le jalon 2 en produira vraiment. À logger dans `DECISIONS.md`.
+- **`-nostdinc`** (D008) : `src/` le garde, exactement comme la cible GBA. Les fichiers de `platform/` compilent avec les en-têtes système. Deux jeux de flags dans `Makefile.native`. Réserve : garder mince la surface de `platform/` exposée aux en-têtes du decomp, pour limiter les redéfinitions `NULL`/`TRUE`.
+- **Répertoire de la couche plateforme** (D009) : `platform/`, à la racine. **Pas sous `src/`** — vérifié empiriquement, le `Makefile` GBA capterait `src/platform/*.c` via `$(wildcard src/*/*.c)` et les compilerait dans la ROM.
 
 ## Bloqué par
 

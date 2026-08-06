@@ -10,14 +10,14 @@ Jalon 2 planifié dans `TODO.md`, aucune ligne de code écrite.
 
 ## À reprendre à la prochaine session
 
-1. Merger la branche dans `main` (ou décider de continuer dessus).
-2. Décider si le hook `PostToolUse`/`Task` est activé — le script est prêt et testé (`.claude/hooks/post-task-disk-check.sh`), **non installé** : il manque l'entrée dans `.claude/settings.json` (snippet dans l'historique de conversation, ou à reconstruire depuis l'en-tête du script). Elrik a dit oui sur le principe.
-3. Attaquer J2-T0 (dette LP64) puis J2-T1 (étendre `verify.sh`) — dans cet ordre, le test avant le code.
+1. ~~Merger la branche~~ — fait, `main` est à jour.
+2. ~~Hook~~ — installé et commité (`.claude/settings.json` + `.claude/hooks/post-task-disk-check.sh`). **Mais** : `.claude/` n'existait pas au démarrage de la session où il a été créé, donc le watcher de configuration ne le surveillait probablement pas encore. S'il ne se déclenche pas, ouvrir `/hooks` une fois ou redémarrer.
+3. Attaquer **J2-T0** (dette LP64) puis **J2-T1** (étendre `verify.sh`) — dans cet ordre, le test avant le code.
 
-## Décisions ouvertes pour le jalon 2
+## Décisions tranchées — plus rien en attente
 
-- `-nostdinc` vs libc pour la couche plateforme (voir `TODO.md`).
-- Nom du répertoire de la couche plateforme — reporté du jalon 1 faute de matière.
+- **D008** : `src/` garde `-nostdinc` (mêmes en-têtes que la cible GBA, donc aucune divergence possible par ce chemin) ; `platform/` compile avec les en-têtes système.
+- **D009** : couche plateforme dans `platform/` à la racine. **Jamais sous `src/`** — vérifié empiriquement, le `$(wildcard src/*/*.c)` du `Makefile` GBA capterait ces fichiers et les compilerait dans la ROM.
 
 ## Pour plus tard (jalon 3)
 

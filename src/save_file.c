@@ -1,4 +1,5 @@
 #include "save_file.h"
+#include "sram/sram.h"
 #include "callbacks.h"
 #include "dma.h"
 #include "macros.h"
@@ -887,7 +888,7 @@ void SramTestFlash(void)
     gSramCorruptFlag = FALSE;
 
     // Perform a write Text -> Flash
-    if (SramWriteChecked(sMetZeroSramCheck_Text, SRAM_BASE + OFFSET_OF(struct Sram, MetZeroSramCheck_Text), SRAM_TEXT_SIZE))
+    if (SramWriteChecked((u8*)sMetZeroSramCheck_Text, SRAM_BASE + OFFSET_OF(struct Sram, MetZeroSramCheck_Text), SRAM_TEXT_SIZE))
         flags = 1; // Internal check failed
 
     // Read the text previously written into a local buffer

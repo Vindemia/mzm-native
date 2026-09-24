@@ -32,4 +32,7 @@ void Music_EmptyCommand(struct TrackVariables* pVariables);
 void ClearRegistersForPsg(struct PsgSoundData* pSound, u8 channel);
 void ClearRegistersForPsg_Unused(struct PsgSoundData* pSound, u8 channel);
 
+// Implementee en assembleur (asm/soundcode.s), signature documentee la-bas
+s32 CallGetNoteFrequency(s32 frequency, u32 pitch);
+
 #endif /* AUDIO_H */

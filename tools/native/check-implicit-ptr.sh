@@ -41,22 +41,20 @@ mapfile -t NAMES < <(grep -oE "implicit declaration of function '[A-Za-z_0-9]+'"
 # Types de retour surs : void et entiers de taille <= int (typedefs resolus
 # ci-dessous, enums compris).
 # ponytail: u8/u16/s8/s16 acceptes comme le demande la spec ; en SysV x86_64
-# les bits hauts d'un retour < 32 bits ne sont pas garantis par l'ABI.
-# gcc etend en pratique, mais un prototype propre reste la vraie solution.
+# les bits hauts d'un retour < 32 bits ne sont pas garantis par l'ABI, et
+# gcc ne les masque pas (u8 f(u8 a,u8 b){return a+b;} laisse 300 dans eax,
+# -O0 comme -O2) : risque reel, liste dans docs/ai/native-blockers.md.
+# Resserrer a void|u32|s32|int pour le rendre rouge.
 SAFE_RE='^(void|u8|s8|u16|s16|u32|s32|vu8|vs8|vu16|vs16|vu32|vs32|int|unsigned int|signed int|unsigned|char|signed char|unsigned char|short|unsigned short|signed short|_Bool)$'
 
 TAGS=$(ctags -R -f - --languages=C --langmap=C:.c.h --kinds-C=+p --fields=+t include src 2>/dev/null)
 
-# typeref d'un nom : prototype (p) dans include/ d'abord, puis definition (f).
+# Tous les typeref d'un nom (prototypes p et definitions f, include/ et src/),
+# NAKED_FUNCTION retire (attribut, pas un type). Plusieurs types de retour
+# distincts (ex. #ifdef NATIVE) = ambigu -> echec, on ne choisit pas au hasard.
 lookup() {
-    local n=$1 kind dir
-    for kind in "p	include/" "f	include/" "f	src/"; do
-        dir=${kind#*	}; kind=${kind%%	*}
-        awk -F'\t' -v n="$n" -v k="$kind" -v d="$dir" \
-            '$1==n && index($2,d)==1 && $4==k { for(i=5;i<=NF;i++) if ($i ~ /^typeref:/) { sub(/^typeref:/,"",$i); print $2 "\t" $i; exit } }' \
-            <<< "$TAGS" | grep . && return 0
-    done
-    return 1
+    awk -F'\t' -v n="$1" '$1==n && ($4=="p" || $4=="f") { for(i=5;i<=NF;i++) if ($i ~ /^typeref:/) { t=$i; sub(/^typeref:/,"",t); sub(/NAKED_FUNCTION +/,"",t); print $2 "\t" t } }' \
+        <<< "$TAGS" | sort -t$'\t' -k2,2 -u | grep .
 }
 
 # Resout un typedef (typeref:typename:X) jusqu'a un type de base.
@@ -79,17 +77,22 @@ resolve() {
 }
 
 BAD=0
-echo "check-implicit-ptr : ${#NAMES[@]} fonctions implicitement declarees ($(grep -c 'implicit declaration of function' "$LOG") sites), log $LOG"
+echo "check-implicit-ptr : ${#NAMES[@]} fonctions implicitement declarees ($(grep -c 'implicit declaration of function' "$LOG") paires fonction x fichier, gcc ne signale que le 1er appel par .c), log $LOG"
 for n in "${NAMES[@]}"; do
     if ! hit=$(lookup "$n"); then
         echo "  ECHEC  $n : prototype introuvable (include/ ni src/)"
         BAD=$((BAD+1)); continue
     fi
-    where=${hit%%	*}; raw=${hit#*	}
-    base=$(resolve "$raw")
+    bases=$(while IFS=$'\t' read -r w r; do resolve "$r"; done <<< "$hit" | sort -u)
+    if [ "$(wc -l <<< "$bases")" -gt 1 ]; then
+        echo "  ECHEC  $n : types de retour contradictoires ($(tr '\n' ' ' <<< "$hit"| tr '\t' '=')) -> $(tr '\n' '/' <<< "$bases")"
+        BAD=$((BAD+1)); continue
+    fi
+    where=$(head -1 <<< "$hit" | cut -f1); raw=$(head -1 <<< "$hit" | cut -f2)
+    base=$bases
     if [[ ! $base =~ $SAFE_RE ]]; then
         sites=$(grep -E "implicit declaration of function '$n'" "$LOG" | cut -d: -f1,2 | sort -uV | tr '\n' ' ')
-        echo "  ECHEC  $n : retourne '${raw#typename:}' -> '$base' ($where) ; appels : $sites"
+        echo "  ECHEC  $n : retourne '${raw#typename:}' -> '$base' ($where) ; 1er appel par .c : $sites"
         BAD=$((BAD+1))
     fi
 done

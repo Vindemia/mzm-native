@@ -1,0 +1,6 @@
+# Sonde jetable include/zz_probe_j2t0.h (supprimee apres) :
+#   #ifdef NATIVE / u8* AnimatedGraphicsUpdate(void); / #else / u32 AnimatedGraphicsUpdate(void); / #endif
+check-implicit-ptr : 306 fonctions implicitement declarees (1167 paires fonction x fichier, gcc ne signale que le 1er appel par .c), log build/native-implicit/build.log
+  ECHEC  AnimatedGraphicsUpdate : types de retour contradictoires (include/zz_probe_j2t0.h=typename:u32 include/zz_probe_j2t0.h=typename:u8 * include/animated_graphics.h=typename:void ) -> u8 */unsigned int/void/
+check-implicit-ptr : FAIL (1 fonction(s) a retour non-int appelee(s) sans declaration)
+exit=1

@@ -27,7 +27,7 @@ En complément, non bloquant pour la DoD mais à faire tourner : une cible de bu
 
 - [x] `SramWriteChecked` (`include/sram/sram.h:9`) retourne `u8*` mais est appelée sans déclaration en contexte booléen (`src/save_file.c:890,901`) → en LP64 le retour implicite `int` tronque l'adresse et peut **inverser la condition**. Corriger par l'`#include` manquant, pas par un cast.
 - [x] Repasser sur les 309 fonctions implicitement déclarées (`docs/ai/native-blockers.md`) : re-contrôler qu'aucune autre ne retourne un pointeur maintenant qu'on va exécuter le code. → `tools/native/check-implicit-ptr.sh` (étape 3 de `verify.sh`) : seul `SramWriteChecked` retournait un pointeur ; `CallGetNoteFrequency` (asm, sans prototype) déclarée. Rouge→vert, logs dans `docs/ai/logs/j2-t0-*`.
-- [ ] **Résiduel à trancher** : 36 fonctions implicites retournent `u8`/`u16` (liste dans `native-blockers.md`). En SysV x86_64 l'ABI ne garantit pas les bits hauts d'un retour < 32 bits ; l'appelant implicite lit tout `eax` → comparaison potentiellement fausse. Hors du seuil fixé pour J2-T0 (« entier ≤ int »), non corrigé.
+- [ ] **Résiduel ouvert — À FERMER AVANT J2-T5 (première exécution)** : 36 fonctions implicites retournent `u8`/`u16` (liste dans `native-blockers.md`). En SysV x86_64 l'ABI ne garantit pas les bits hauts d'un retour < 32 bits ; l'appelant implicite lit tout `eax` → comparaison potentiellement fausse. Hors du seuil fixé pour J2-T0 (« entier ≤ int »), non corrigé. Contrainte d'ordre : J2-T5 ne démarre pas tant que cette case est ouverte (fermer = `SAFE_RE` du script resserré à `void|u32|s32|int` et vert, ROM identique).
 
 Fait en premier délibérément : ce bug ne produit aucun message et se manifesterait comme un comportement erratique au milieu du jalon 2, quand dix autres choses seront neuves et suspectes.
 
@@ -56,6 +56,8 @@ Le pendant, à l'édition de liens, de la passe de mesure du jalon 1 — et le v
 Écart assumé avec `ROADMAP.md`, qui prévoyait des stubs : un `Div` qui retourne 0 ne fait pas « tourner sans crash », il produit des divisions absurdes, des boucles infinies ou des indices hors bornes. Ces routines sont du calcul pur et de la copie mémoire, quelques dizaines de lignes chacune, sans dépendance matérielle. Les stuber coûterait plus cher en débogage que les écrire.
 
 ### J2-T5 — Point d'entrée et boucle de frame
+
+**Prérequis bloquant** : case résiduel u8/u16 de J2-T0 fermée (retours < 32 bits non garantis par l'ABI x86_64).
 
 - [ ] `main()` natif remplaçant `crt0.s` : initialiser la mémoire, appeler l'init du jeu, entrer dans la boucle.
 - [ ] Remplacer l'attente VBlank par un appel natif au gestionnaire enregistré (`src/callbacks.c`), cadencé à 59,7275 Hz.

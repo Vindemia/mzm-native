@@ -6,11 +6,13 @@ Ce fichier suit le travail **en cours**, pas terminé. Mis à jour au fur et à 
 
 Branche `jalon-2-t0-lp64` (depuis `main` `98808e99`), non poussée, non mergée.
 
-**J2-T0 fait** :
+**J2-T0 : volet pointeur fait, résiduel u8/u16 ouvert, À FERMER AVANT J2-T5 (première exécution)** :
 - `tools/native/check-implicit-ptr.sh` écrit ; ROUGE sur l'état de départ (SramWriteChecked u8*, CallGetNoteFrequency sans prototype), VERT après correction. Logs : `docs/ai/logs/j2-t0-*`.
 - Corrigé : `src/save_file.c` (+include `sram/sram.h`, cast `(u8*)` de l'argument const), `include/audio.h` (+prototype CallGetNoteFrequency). ROM EU identique après rebuild complet.
 - `verify.sh` : étape 3 ajoutée ; étapes 1-2 reconstruisent tout (D010 : sans ça un check incrémental peut être vert à tort — constaté). PASS complet, ~1 min 45.
 - Chiffres : `native-blockers.md` §J2-T0. Décisions : D010, D011.
+
+**Relecture (validé avec réserves) traitée** : faux vert sur prototypes contradictoires corrigé (sonde rouge dans `docs/ai/logs/`), commentaire u8/u16 corrigé, « sites » précisés en paires fonction × fichier.
 
 **Reste ouvert** : 36 fonctions implicites à retour `u8`/`u16` (bits hauts non garantis par l'ABI x86_64) — case ajoutée dans `TODO.md`, pas traitée.
 
@@ -26,7 +28,7 @@ Jalon 2 planifié dans `TODO.md`, aucune ligne de code écrite.
 
 1. ~~Merger la branche~~ — fait, `main` est à jour.
 2. ~~Hook~~ — installé et commité (`.claude/settings.json` + `.claude/hooks/post-task-disk-check.sh`). **Mais** : `.claude/` n'existait pas au démarrage de la session où il a été créé, donc le watcher de configuration ne le surveillait probablement pas encore. S'il ne se déclenche pas, ouvrir `/hooks` une fois ou redémarrer.
-3. ~~Attaquer **J2-T0**~~ (fait 2026-09-24, voir ci-dessus) puis **J2-T1** (étendre `verify.sh`) — dans cet ordre, le test avant le code.
+3. **J2-T0** volet pointeur fait 2026-09-24 (voir ci-dessus), résiduel u8/u16 à fermer avant J2-T5 ; puis **J2-T1** (étendre `verify.sh`) — dans cet ordre, le test avant le code.
 
 ## Décisions tranchées — plus rien en attente
 

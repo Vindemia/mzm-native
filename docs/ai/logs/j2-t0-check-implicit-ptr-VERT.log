@@ -1,0 +1,3 @@
+check-implicit-ptr : 306 fonctions implicitement declarees (1167 sites), log build/native-implicit/build.log
+check-implicit-ptr : PASS (aucune fonction implicite ne retourne autre chose que void / entier <= int)
+exit=0

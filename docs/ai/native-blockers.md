@@ -101,6 +101,25 @@ AnimatedGraphicsCheckPlayLightningEffect, AnimatedGraphicsLoad, AnimatedGraphics
 
 Régénérable : `make -f Makefile.native clean && make -k -f Makefile.native all CFLAGS="-std=gnu89 -Wimplicit-function-declaration" > /tmp/diag.log 2>&1`, puis extraire les noms entre `«` et `»` sur les lignes `warning: déclaration implicite`.
 
+### J2-T0 — corrigé (2026-09-24)
+
+Contrôle déterministe : `tools/native/check-implicit-ptr.sh` (étape 3 de `tools/native/verify.sh`). Compile `src/` en `-fsyntax-only -std=gnu89 -Wimplicit-function-declaration` (même pipeline que `Makefile.native`), extrait les noms, retrouve le type de retour par ctags (prototype `include/`, sinon définition `src/`, typedefs et `MAKE_ENUM` résolus), échoue si un retour n'est pas `void`/entier ≤ int ou si le prototype est introuvable.
+
+| | Avant | Après |
+|---|---|---|
+| Fonctions implicites / sites | 309 / 1170 | 306 / 1167 |
+| Retour pointeur | 1 (`SramWriteChecked`, `src/save_file.c:890,901`) | 0 |
+| Prototype introuvable | 1 (`CallGetNoteFrequency`, `src/audio.c:990,1076`) | 0 |
+| Retour u64/s64/struct/union | 0 | 0 |
+| Sortie du contrôle | `docs/ai/logs/j2-t0-check-implicit-ptr-ROUGE.log` (exit 1) | `docs/ai/logs/j2-t0-check-implicit-ptr-VERT.log` (exit 0) |
+
+Sites corrigés : `src/save_file.c` (+`#include "sram/sram.h"`, qui déclare aussi `SramWriteUnchecked` → 3e fonction sortie de la liste ; argument `const` casté `(u8*)` ligne 891, D011) ; `include/audio.h` (+prototype `s32 CallGetNoteFrequency(s32, u32)`). ROM EU bit-identique après `make REGION=eu tidy check`.
+
+Répartition des 306 restantes (type de retour résolu) : 215 `void`, 52 `u32`, 3 `s32`/`int`, **34 `u8`, 2 `u16`**.
+
+**Risque résiduel non traité (hors seuil J2-T0)** : en SysV x86_64, un retour `u8`/`u16` n'a pas de bits hauts garantis ; l'appelant qui suppose `int` lit tout `eax` (gcc peut renvoyer `a+b` sans masquer). Les 36 concernées : BgClipGetNewBldalphaValue (u16), ChozoStatueGetBehavior, CutsceneHandler, EscapeDetermineTimer, FusionGalleryConnectProcess, FusionGalleryLinkProcess, InitTrack, LocationTextGetGfxSlot, ProcessComplexOam, ProjectileCheckVerticalCollisionAtPosition, ProjectileDealDamage, SavePlatformDetectSamus, ScreenShakeStartHorizontal, ScreenShakeStartVertical, SpriteCheckCollidingWithSamus, SpriteSpawnDropFollowers, SpriteSpawnPrimary, SpriteSpawnSecondary, SpriteUtilCheckHasDrops, SpriteUtilCountChildPrimarySprites, SpriteUtilCountChildSecondarySprites, SpriteUtilCountDrops, SpriteUtilCountPrimarySprites, SpriteUtilFindPrimary, SpriteUtilFindSecondaryWithRoomSlot, SpriteUtilGetCollisionAtPosition, SpriteUtilIsSpriteStunned, SpriteUtilMakeSpriteFaceSamusRotation, SpriteUtilShouldFall, Sqrt (u16), StatusScreenGetCurrentEquipmentSelected, TextProcessFileScreenPopUp, TextProcessMessageBanner, TextProcessStory, TimeAttackCheckSetNewRecord, TourianEscapeHandler. Correction probable par `#include`, mais un prototype `u8` fait narrow l'appel côté agbcc → risque réel de casser le matching site par site ; à traiter comme tâche dédiée (resserrer `SAFE_RE` du script à `void|u32|s32|int` pour la rendre rouge).
+
+
 ## Inventaire des symboles stubés (jalon 2 — matière première)
 
 Tous marqués `#ifdef NATIVE` (ou `#elif defined(NATIVE)`), corps vide/neutre, commentaire `TODO(jalon 2)`. Aucun n'exécute la logique réelle — c'est la liste de ce qu'il faudra implémenter pour de vrai au jalon 2.

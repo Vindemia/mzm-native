@@ -16,8 +16,8 @@
   CC src/bg_clip.s
   CC src/block.s
   CC src/cable_link.s
-  CC src/chozodia_escape.s
   CC src/callbacks.s
+  CC src/chozodia_escape.s
   CC src/clipdata.s
   CC src/color_effects.s
   CC src/color_fading.s
@@ -36,13 +36,13 @@
   CC src/globals1.s
   CC src/globals2.s
   CC src/haze.s
-  CC src/hud.s
   CC src/hud_generic.s
+  CC src/hud.s
   CC src/in_game.s
   CC src/in_game_cutscene.s
   CC src/in_game_timer.s
-  CC src/init_game.s
   CC src/init_helpers.s
+  CC src/init_game.s
   CC src/intro.s
   CC src/link.s
   CC src/location_text.s
@@ -136,8 +136,8 @@
   CC src/menus/title_screen.s
   CC src/sprites_ai/acid_worm.s
   CC src/sprites_ai/area_banner.s
-  CC src/sprites_ai/atomic.s
   CC src/sprites_ai/baristute.s
+  CC src/sprites_ai/atomic.s
   CC src/sprites_ai/black_space_pirate.s
   CC src/sprites_ai/boss_statues.s
   CC src/sprites_ai/charge_beam.s
@@ -172,8 +172,8 @@
   CC src/sprites_ai/imago_larva.s
   CC src/sprites_ai/imago_larva_right_side.s
   CC src/sprites_ai/kraid.s
-  CC src/sprites_ai/mecha_ridley.s
   CC src/sprites_ai/map_station.s
+  CC src/sprites_ai/mecha_ridley.s
   CC src/sprites_ai/mella.s
   CC src/sprites_ai/message_banner.s
   CC src/sprites_ai/metroid.s
@@ -205,8 +205,8 @@
   CC src/sprites_ai/sova.s
   CC src/sprites_ai/space_pirate.s
   CC src/sprites_ai/space_pirate_carrying_power_bomb.s
-  CC src/sprites_ai/squeept.s
   CC src/sprites_ai/steam.s
+  CC src/sprites_ai/squeept.s
   CC src/sprites_ai/tangle_vine.s
   CC src/sprites_ai/unknown_item_block.s
   CC src/sprites_ai/unknown_item_chozo_statue.s
@@ -270,16 +270,16 @@
   CC src/data/sprites/escape_ship.s
   CC src/data/sprites/falling_chozo_pillar.s
   CC src/data/sprites/gadora.s
-  CC src/data/sprites/gamet.s
   CC src/data/sprites/geega.s
-  CC src/data/sprites/geron.s
+  CC src/data/sprites/gamet.s
   CC src/data/sprites/gekitai_machine.s
+  CC src/data/sprites/geron.s
   CC src/data/sprites/geron_norfair.s
   CC src/data/sprites/geruta.s
   CC src/data/sprites/glass_tube.s
   CC src/data/sprites/gunship.s
-  CC src/data/sprites/hive.s
   CC src/data/sprites/holtz.s
+  CC src/data/sprites/hive.s
   CC src/data/sprites/imago.s
   CC src/data/sprites/imago_cocoon.s
   CC src/data/sprites/imago_larva.s
@@ -334,8 +334,8 @@
   CC src/data/sprites/zipline_generator.s
   CC src/data/sprites/zoomer.s
   CC src/data/tilesets/tilesets_set0.s
-  CC src/data/tilesets/tilesets_set2.s
   CC src/data/tilesets/tilesets_set1.s
+  CC src/data/tilesets/tilesets_set2.s
   CC src/data/tilesets/tilesets_set3.s
   CC src/data/tilesets/tilesets_set4.s
   CC src/data/tilesets/tilesets_set5.s
@@ -368,8 +368,8 @@
   CC src/data/rooms/brinstar/brinstar_30.s
   CC src/data/rooms/brinstar/brinstar_31.s
   CC src/data/rooms/brinstar/brinstar_32.s
-  CC src/data/rooms/brinstar/brinstar_33.s
   CC src/data/rooms/brinstar/brinstar_34.s
+  CC src/data/rooms/brinstar/brinstar_33.s
   CC src/data/rooms/brinstar/brinstar_35.s
   CC src/data/rooms/brinstar/brinstar_36.s
   CC src/data/rooms/brinstar/brinstar_37.s
@@ -386,8 +386,8 @@
   CC src/data/rooms/brinstar/brinstar_9.s
   CC src/data/rooms/chozodia/bg3.s
   CC src/data/rooms/chozodia/chozodia_0.s
-  CC src/data/rooms/chozodia/chozodia_11.s
   CC src/data/rooms/chozodia/chozodia_10.s
+  CC src/data/rooms/chozodia/chozodia_11.s
   CC src/data/rooms/chozodia/chozodia_12.s
   CC src/data/rooms/chozodia/chozodia_13.s
   CC src/data/rooms/chozodia/chozodia_14.s
@@ -409,9 +409,9 @@
   CC src/data/rooms/chozodia/chozodia_29.s
   CC src/data/rooms/chozodia/chozodia_2.s
   CC src/data/rooms/chozodia/chozodia_30.s
-  CC src/data/rooms/chozodia/chozodia_32.s
   CC src/data/rooms/chozodia/chozodia_31.s
   CC src/data/rooms/chozodia/chozodia_33.s
+  CC src/data/rooms/chozodia/chozodia_32.s
   CC src/data/rooms/chozodia/chozodia_34.s
   CC src/data/rooms/chozodia/chozodia_35.s
   CC src/data/rooms/chozodia/chozodia_36.s
@@ -421,8 +421,8 @@
   CC src/data/rooms/chozodia/chozodia_3.s
   CC src/data/rooms/chozodia/chozodia_40.s
   CC src/data/rooms/chozodia/chozodia_41.s
-  CC src/data/rooms/chozodia/chozodia_43.s
   CC src/data/rooms/chozodia/chozodia_42.s
+  CC src/data/rooms/chozodia/chozodia_43.s
   CC src/data/rooms/chozodia/chozodia_44.s
   CC src/data/rooms/chozodia/chozodia_45.s
   CC src/data/rooms/chozodia/chozodia_46.s
@@ -463,8 +463,8 @@
   CC src/data/rooms/chozodia/chozodia_78.s
   CC src/data/rooms/chozodia/chozodia_79.s
   CC src/data/rooms/chozodia/chozodia_7.s
-  CC src/data/rooms/chozodia/chozodia_81.s
   CC src/data/rooms/chozodia/chozodia_80.s
+  CC src/data/rooms/chozodia/chozodia_81.s
   CC src/data/rooms/chozodia/chozodia_82.s
   CC src/data/rooms/chozodia/chozodia_83.s
   CC src/data/rooms/chozodia/chozodia_84.s
@@ -488,8 +488,8 @@
   CC src/data/rooms/crateria/crateria_0.s
   CC src/data/rooms/crateria/crateria_10.s
   CC src/data/rooms/crateria/crateria_11.s
-  CC src/data/rooms/crateria/crateria_13.s
   CC src/data/rooms/crateria/crateria_12.s
+  CC src/data/rooms/crateria/crateria_13.s
   CC src/data/rooms/crateria/crateria_14.s
   CC src/data/rooms/crateria/crateria_15.s
   CC src/data/rooms/crateria/crateria_16.s
@@ -521,14 +521,14 @@
   CC src/data/rooms/kraid/kraid_19.s
   CC src/data/rooms/kraid/kraid_1.s
   CC src/data/rooms/kraid/kraid_20.s
-  CC src/data/rooms/kraid/kraid_22.s
   CC src/data/rooms/kraid/kraid_21.s
+  CC src/data/rooms/kraid/kraid_22.s
   CC src/data/rooms/kraid/kraid_23.s
   CC src/data/rooms/kraid/kraid_24.s
   CC src/data/rooms/kraid/kraid_25.s
   CC src/data/rooms/kraid/kraid_26.s
-  CC src/data/rooms/kraid/kraid_27.s
   CC src/data/rooms/kraid/kraid_28.s
+  CC src/data/rooms/kraid/kraid_27.s
   CC src/data/rooms/kraid/kraid_29.s
   CC src/data/rooms/kraid/kraid_2.s
   CC src/data/rooms/kraid/kraid_30.s
@@ -544,8 +544,8 @@
   CC src/data/rooms/kraid/kraid_3.s
   CC src/data/rooms/kraid/kraid_40.s
   CC src/data/rooms/kraid/kraid_41.s
-  CC src/data/rooms/kraid/kraid_5.s
   CC src/data/rooms/kraid/kraid_4.s
+  CC src/data/rooms/kraid/kraid_5.s
   CC src/data/rooms/kraid/kraid_6.s
   CC src/data/rooms/kraid/kraid_7.s
   CC src/data/rooms/kraid/kraid_8.s
@@ -557,15 +557,15 @@
   CC src/data/rooms/norfair/norfair_12.s
   CC src/data/rooms/norfair/norfair_13.s
   CC src/data/rooms/norfair/norfair_14.s
-  CC src/data/rooms/norfair/norfair_15.s
   CC src/data/rooms/norfair/norfair_16.s
+  CC src/data/rooms/norfair/norfair_15.s
   CC src/data/rooms/norfair/norfair_17.s
   CC src/data/rooms/norfair/norfair_18.s
   CC src/data/rooms/norfair/norfair_19.s
   CC src/data/rooms/norfair/norfair_1.s
   CC src/data/rooms/norfair/norfair_20.s
-  CC src/data/rooms/norfair/norfair_21.s
   CC src/data/rooms/norfair/norfair_22.s
+  CC src/data/rooms/norfair/norfair_21.s
   CC src/data/rooms/norfair/norfair_23.s
   CC src/data/rooms/norfair/norfair_24.s
   CC src/data/rooms/norfair/norfair_25.s
@@ -574,8 +574,8 @@
   CC src/data/rooms/norfair/norfair_28.s
   CC src/data/rooms/norfair/norfair_29.s
   CC src/data/rooms/norfair/norfair_2.s
-  CC src/data/rooms/norfair/norfair_31.s
   CC src/data/rooms/norfair/norfair_30.s
+  CC src/data/rooms/norfair/norfair_31.s
   CC src/data/rooms/norfair/norfair_32.s
   CC src/data/rooms/norfair/norfair_33.s
   CC src/data/rooms/norfair/norfair_34.s
@@ -602,8 +602,8 @@
   CC src/data/rooms/norfair/norfair_53.s
   CC src/data/rooms/norfair/norfair_54.s
   CC src/data/rooms/norfair/norfair_55.s
-  CC src/data/rooms/norfair/norfair_56.s
   CC src/data/rooms/norfair/norfair_5.s
+  CC src/data/rooms/norfair/norfair_56.s
   CC src/data/rooms/norfair/norfair_6.s
   CC src/data/rooms/norfair/norfair_7.s
   CC src/data/rooms/norfair/norfair_8.s
@@ -631,8 +631,8 @@
   CC src/data/rooms/ridley/ridley_27.s
   CC src/data/rooms/ridley/ridley_28.s
   CC src/data/rooms/ridley/ridley_29.s
-  CC src/data/rooms/ridley/ridley_2.s
   CC src/data/rooms/ridley/ridley_30.s
+  CC src/data/rooms/ridley/ridley_2.s
   CC src/data/rooms/ridley/ridley_31.s
   CC src/data/rooms/ridley/ridley_32.s
   CC src/data/rooms/ridley/ridley_3.s
@@ -654,22 +654,22 @@
   CC src/data/rooms/tourian/tourian_17.s
   CC src/data/rooms/tourian/tourian_18.s
   CC src/data/rooms/tourian/tourian_19.s
-  CC src/data/rooms/tourian/tourian_2.s
   CC src/data/rooms/tourian/tourian_1.s
+  CC src/data/rooms/tourian/tourian_2.s
   CC src/data/rooms/tourian/tourian_3.s
   CC src/data/rooms/tourian/tourian_4.s
   CC src/data/rooms/tourian/tourian_5.s
   CC src/data/rooms/tourian/tourian_6.s
-  CC src/data/rooms/tourian/tourian_8.s
   CC src/data/rooms/tourian/tourian_7.s
+  CC src/data/rooms/tourian/tourian_8.s
   CC src/data/rooms/tourian/tourian_9.s
   AS asm/audio_internal.o
   AS asm/crt0.o
   AS asm/intr_main.o
   AS asm/romheader.o
   AS asm/soundcode.o
-  AS sound/direct_sound_data.o
   AS asm/syscalls.o
+  AS sound/direct_sound_data.o
   AS sound/m_play_def.o
   AS sound/programmable_wave_data.o
   AS sound/sound_entries.o
@@ -683,8 +683,8 @@
   AS sound/tracks/track_104.o
   AS sound/tracks/track_105.o
   AS sound/tracks/track_106.o
-  AS sound/tracks/track_108.o
   AS sound/tracks/track_107.o
+  AS sound/tracks/track_108.o
   AS sound/tracks/track_109.o
   AS sound/tracks/track_10.o
   AS sound/tracks/track_110.o
@@ -1323,8 +1323,8 @@
   AS src/cable_link.o
   AS src/callbacks.o
   AS src/chozodia_escape.o
-  AS src/clipdata.o
   AS src/color_effects.o
+  AS src/clipdata.o
   AS src/color_fading.o
   AS src/complex_oam.o
   AS src/connection.o
@@ -1335,16 +1335,16 @@
   AS src/ending_and_gallery.o
   AS src/escape.o
   AS src/event.o
-  AS src/fixed_point.o
   AS src/fusion_gallery.o
   AS src/gadora_hatch.o
+  AS src/fixed_point.o
   AS src/globals1.o
   AS src/globals2.o
   AS src/haze.o
   AS src/hud.o
   AS src/hud_generic.o
-  AS src/in_game.o
   AS src/in_game_cutscene.o
+  AS src/in_game.o
   AS src/in_game_timer.o
   AS src/init_game.o
   AS src/init_helpers.o
@@ -1369,28 +1369,28 @@
   AS src/screen_shake.o
   AS src/scroll.o
   AS src/soft_reset.o
-  AS src/soft_reset_input.o
   AS src/sprite.o
+  AS src/soft_reset_input.o
+  AS src/sprite_debris.o
   AS src/sprite_util.o
   AS src/sram_misc.o
   AS src/syscall_wrappers.o
   AS src/text.o
-  AS src/sprite_debris.o
-  AS src/time_attack.o
   AS src/tourian_escape.o
+  AS src/time_attack.o
   AS src/transfer.o
   AS src/transparency.o
   AS src/update_input.o
   AS src/cutscenes/before_ruins_test.o
-  AS src/cutscenes/enter_tourian.o
   AS src/cutscenes/cutscene_utils.o
+  AS src/cutscenes/enter_tourian.o
   AS src/cutscenes/getting_fully_powered_suit.o
   AS src/cutscenes/kraid_rising.o
   AS src/cutscenes/mecha_sees_samus.o
   AS src/cutscenes/mother_brain_close_up.o
   AS src/cutscenes/ridley_in_space.o
-  AS src/cutscenes/ridley_spawn.o
   AS src/cutscenes/ridley_landing.o
+  AS src/cutscenes/ridley_spawn.o
   AS src/cutscenes/samus_in_blue_ship.o
   AS src/cutscenes/statue_opening.o
   AS src/cutscenes/story_text_cutscene.o
@@ -1416,27 +1416,27 @@
   AS src/data/hud_data.o
   AS src/data/in_game_cutscene_data.o
   AS src/data/intro_data.o
-  AS src/data/io_transfer_data.o
   AS src/data/music_track_data.o
-  AS src/data/particle_data.o
+  AS src/data/io_transfer_data.o
   AS src/data/nes_metroid.o
+  AS src/data/particle_data.o
   AS src/data/projectile_data.o
   AS src/data/rooms_data.o
   AS src/data/samus_close_up_data.o
   AS src/data/save_file_data.o
   AS src/data/shortcut_pointers.o
-  AS src/data/sprite_data.o
-  AS src/data/spriteset.o
 src/data/shortcut_pointers.s: Assembler messages:
 src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes for .rodata
+  AS src/data/sprite_data.o
+  AS src/data/spriteset.o
   AS src/data/text_data.o
   AS src/data/tourian_escape_data.o
   AS src/data/visual_effects_data.o
   AS src/menus/boot_debug.o
   AS src/menus/erase_sram.o
   AS src/menus/file_select.o
-  AS src/menus/pause_screen.o
   AS src/menus/game_over.o
+  AS src/menus/pause_screen.o
   AS src/menus/pause_screen_map.o
   AS src/menus/pause_screen_sub_menus.o
   AS src/menus/status_screen.o
@@ -1446,11 +1446,11 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/sprites_ai/atomic.o
   AS src/sprites_ai/baristute.o
   AS src/sprites_ai/black_space_pirate.o
-  AS src/sprites_ai/boss_statues.o
   AS src/sprites_ai/charge_beam.o
   AS src/sprites_ai/chozo_ball.o
-  AS src/sprites_ai/chozo_statue.o
+  AS src/sprites_ai/boss_statues.o
   AS src/sprites_ai/chozo_statue_movement.o
+  AS src/sprites_ai/chozo_statue.o
   AS src/sprites_ai/crocomire.o
   AS src/sprites_ai/deorem.o
   AS src/sprites_ai/dessgeega.o
@@ -1459,9 +1459,9 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/sprites_ai/elevator_statue.o
   AS src/sprites_ai/enemy_drop.o
   AS src/sprites_ai/escape_gate.o
+  AS src/sprites_ai/escape_ship.o
   AS src/sprites_ai/escape_ship_pirate.o
   AS src/sprites_ai/explosion_zebes_escape.o
-  AS src/sprites_ai/escape_ship.o
   AS src/sprites_ai/falling_chozo_pillar.o
   AS src/sprites_ai/gadora.o
   AS src/sprites_ai/gamet.o
@@ -1489,8 +1489,8 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/sprites_ai/mother_brain.o
   AS src/sprites_ai/multiviola.o
   AS src/sprites_ai/parasite.o
-  AS src/sprites_ai/polyp.o
   AS src/sprites_ai/piston.o
+  AS src/sprites_ai/polyp.o
   AS src/sprites_ai/power_grip.o
   AS src/sprites_ai/primary_sprite_b3.o
   AS src/sprites_ai/reo.o
@@ -1523,10 +1523,10 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/sprites_ai/waver.o
   AS src/sprites_ai/worker_robot.o
   AS src/sprites_ai/zebbo.o
+  AS src/sprites_ai/zeb.o
   AS src/sprites_ai/zebetite_and_cannon.o
   AS src/sprites_ai/zeela.o
   AS src/sprites_ai/zipline.o
-  AS src/sprites_ai/zeb.o
   AS src/sprites_ai/zipline_generator.o
   AS src/sprites_ai/zoomer.o
   AS src/sram/sram.o
@@ -1546,34 +1546,34 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/menus/boot_debug_data.o
   AS src/data/menus/erase_sram_data.o
   AS src/data/menus/file_select_data.o
-  AS src/data/menus/language_select_data.o
   AS src/data/menus/game_over_data.o
+  AS src/data/menus/language_select_data.o
   AS src/data/menus/pause_screen_data.o
   AS src/data/menus/pause_screen_map_data.o
-  AS src/data/menus/status_screen_data.o
   AS src/data/menus/pause_screen_sub_menus_data.o
+  AS src/data/menus/status_screen_data.o
   AS src/data/menus/title_screen_data.o
+  AS src/data/rooms/test_rooms_data.o
   AS src/data/samus/arm_cannon_data.o
   AS src/data/samus/samus_animation_pointers.o
-  AS src/data/rooms/test_rooms_data.o
   AS src/data/samus/samus_empty_data.o
   AS src/data/samus/samus_graphics.o
   AS src/data/samus/samus_palette_data.o
-  AS src/data/sprites/area_banner.o
   AS src/data/sprites/acid_worm.o
+  AS src/data/sprites/area_banner.o
   AS src/data/sprites/atomic.o
   AS src/data/sprites/baristute.o
-  AS src/data/sprites/charge_beam.o
   AS src/data/sprites/boss_statues.o
+  AS src/data/sprites/charge_beam.o
   AS src/data/sprites/chozo_statue.o
   AS src/data/sprites/crocomire.o
   AS src/data/sprites/deorem.o
   AS src/data/sprites/dessgeega.o
-  AS src/data/sprites/elevator_pad.o
   AS src/data/sprites/dragon.o
+  AS src/data/sprites/elevator_pad.o
   AS src/data/sprites/elevator_statue.o
-  AS src/data/sprites/escape_gate.o
   AS src/data/sprites/enemy_drop.o
+  AS src/data/sprites/escape_gate.o
   AS src/data/sprites/escape_ship.o
   AS src/data/sprites/falling_chozo_pillar.o
   AS src/data/sprites/gadora.o
@@ -1605,8 +1605,8 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/sprites/piston.o
   AS src/data/sprites/polyp.o
   AS src/data/sprites/power_grip.o
-  AS src/data/sprites/ridley.o
   AS src/data/sprites/reo.o
+  AS src/data/sprites/ridley.o
   AS src/data/sprites/rinka.o
   AS src/data/sprites/ripper2.o
   AS src/data/sprites/ripper.o
@@ -1619,29 +1619,29 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/sprites/security_gate.o
   AS src/data/sprites/security_laser.o
   AS src/data/sprites/sidehopper.o
-  AS src/data/sprites/skultera.o
   AS src/data/sprites/skree.o
+  AS src/data/sprites/skultera.o
   AS src/data/sprites/sova.o
-  AS src/data/sprites/space_pirate_carrying_power_bomb.o
   AS src/data/sprites/space_pirate.o
+  AS src/data/sprites/space_pirate_carrying_power_bomb.o
   AS src/data/sprites/squeept.o
   AS src/data/sprites/steam.o
   AS src/data/sprites/tangle_vine.o
   AS src/data/sprites/unknown_item_block.o
   AS src/data/sprites/unknown_item_chozo_statue.o
+  AS src/data/sprites/unused_sprites.o
   AS src/data/sprites/viola.o
   AS src/data/sprites/waver.o
-  AS src/data/sprites/unused_sprites.o
   AS src/data/sprites/worker_robot.o
   AS src/data/sprites/zebbo.o
   AS src/data/sprites/zeb.o
   AS src/data/sprites/zebetite_and_cannon.o
-  AS src/data/sprites/zipline.o
   AS src/data/sprites/zeela.o
+  AS src/data/sprites/zipline.o
   AS src/data/sprites/zipline_generator.o
   AS src/data/sprites/zoomer.o
-  AS src/data/tilesets/tilesets_set1.o
   AS src/data/tilesets/tilesets_set0.o
+  AS src/data/tilesets/tilesets_set1.o
   AS src/data/tilesets/tilesets_set2.o
   AS src/data/tilesets/tilesets_set3.o
   AS src/data/tilesets/tilesets_set4.o
@@ -1650,8 +1650,8 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/tilesets/tilesets_set7.o
   AS src/data/rooms/brinstar/bg3.o
   AS src/data/rooms/brinstar/brinstar_0.o
-  AS src/data/rooms/brinstar/brinstar_10.o
   AS src/data/rooms/brinstar/brinstar_11.o
+  AS src/data/rooms/brinstar/brinstar_10.o
   AS src/data/rooms/brinstar/brinstar_12.o
   AS src/data/rooms/brinstar/brinstar_13.o
   AS src/data/rooms/brinstar/brinstar_14.o
@@ -1779,8 +1779,8 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/rooms/chozodia/chozodia_86.o
   AS src/data/rooms/chozodia/chozodia_87.o
   AS src/data/rooms/chozodia/chozodia_88.o
-  AS src/data/rooms/chozodia/chozodia_8.o
   AS src/data/rooms/chozodia/chozodia_89.o
+  AS src/data/rooms/chozodia/chozodia_8.o
   AS src/data/rooms/chozodia/chozodia_90.o
   AS src/data/rooms/chozodia/chozodia_91.o
   AS src/data/rooms/chozodia/chozodia_92.o
@@ -1804,12 +1804,12 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/rooms/crateria/crateria_18.o
   AS src/data/rooms/crateria/crateria_19.o
   AS src/data/rooms/crateria/crateria_1.o
-  AS src/data/rooms/crateria/crateria_21.o
   AS src/data/rooms/crateria/crateria_20.o
+  AS src/data/rooms/crateria/crateria_21.o
   AS src/data/rooms/crateria/crateria_2.o
   AS src/data/rooms/crateria/crateria_3.o
-  AS src/data/rooms/crateria/crateria_4.o
   AS src/data/rooms/crateria/crateria_5.o
+  AS src/data/rooms/crateria/crateria_4.o
   AS src/data/rooms/crateria/crateria_6.o
   AS src/data/rooms/crateria/crateria_7.o
   AS src/data/rooms/crateria/crateria_8.o
@@ -1820,13 +1820,13 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/rooms/kraid/kraid_11.o
   AS src/data/rooms/kraid/kraid_12.o
   AS src/data/rooms/kraid/kraid_13.o
-  AS src/data/rooms/kraid/kraid_14.o
   AS src/data/rooms/kraid/kraid_15.o
+  AS src/data/rooms/kraid/kraid_14.o
   AS src/data/rooms/kraid/kraid_16.o
   AS src/data/rooms/kraid/kraid_17.o
   AS src/data/rooms/kraid/kraid_18.o
-  AS src/data/rooms/kraid/kraid_19.o
   AS src/data/rooms/kraid/kraid_1.o
+  AS src/data/rooms/kraid/kraid_19.o
   AS src/data/rooms/kraid/kraid_20.o
   AS src/data/rooms/kraid/kraid_21.o
   AS src/data/rooms/kraid/kraid_22.o
@@ -1864,26 +1864,26 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/rooms/norfair/norfair_12.o
   AS src/data/rooms/norfair/norfair_13.o
   AS src/data/rooms/norfair/norfair_14.o
-  AS src/data/rooms/norfair/norfair_16.o
   AS src/data/rooms/norfair/norfair_15.o
+  AS src/data/rooms/norfair/norfair_16.o
   AS src/data/rooms/norfair/norfair_17.o
   AS src/data/rooms/norfair/norfair_18.o
-  AS src/data/rooms/norfair/norfair_1.o
   AS src/data/rooms/norfair/norfair_19.o
+  AS src/data/rooms/norfair/norfair_1.o
   AS src/data/rooms/norfair/norfair_20.o
   AS src/data/rooms/norfair/norfair_21.o
-  AS src/data/rooms/norfair/norfair_22.o
   AS src/data/rooms/norfair/norfair_23.o
+  AS src/data/rooms/norfair/norfair_22.o
   AS src/data/rooms/norfair/norfair_24.o
   AS src/data/rooms/norfair/norfair_25.o
   AS src/data/rooms/norfair/norfair_26.o
   AS src/data/rooms/norfair/norfair_27.o
-  AS src/data/rooms/norfair/norfair_28.o
   AS src/data/rooms/norfair/norfair_29.o
+  AS src/data/rooms/norfair/norfair_28.o
   AS src/data/rooms/norfair/norfair_2.o
   AS src/data/rooms/norfair/norfair_30.o
-  AS src/data/rooms/norfair/norfair_31.o
   AS src/data/rooms/norfair/norfair_32.o
+  AS src/data/rooms/norfair/norfair_31.o
   AS src/data/rooms/norfair/norfair_33.o
   AS src/data/rooms/norfair/norfair_34.o
   AS src/data/rooms/norfair/norfair_35.o
@@ -1916,8 +1916,8 @@ src/data/shortcut_pointers.s:5: Warning: setting incorrect section attributes fo
   AS src/data/rooms/norfair/norfair_8.o
   AS src/data/rooms/norfair/norfair_9.o
   AS src/data/rooms/ridley/bg3.o
-  AS src/data/rooms/ridley/ridley_10.o
   AS src/data/rooms/ridley/ridley_0.o
+  AS src/data/rooms/ridley/ridley_10.o
   AS src/data/rooms/ridley/ridley_11.o
   AS src/data/rooms/ridley/ridley_12.o
   AS src/data/rooms/ridley/ridley_13.o
@@ -1995,20 +1995,8 @@ In file included from <stdin>:2:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
       | ^~~~~~
-<stdin>: Dans la fonction « UpdatePsgSounds »:
-<stdin>:423:38: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-<stdin>: Dans la fonction « FusionGalleryConnectProcess »:
-<stdin>:78:29: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-<stdin>:78:49: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-<stdin>: Dans la fonction « GetNoteDelay »:
-<stdin>:1362:51: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 <stdin>: Dans la fonction « InitializeAudio »:
 <stdin>:37:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068780 » en « 2147484460 » [-Woverflow]
-<stdin>: Dans la fonction « AudioCommand_Voice »:
-<stdin>:1580:43: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-<stdin>:1580:36: warning: transtypage vers un pointeur depuis un entier de taille différente [-Wint-to-pointer-cast]
-<stdin>:1588:43: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-<stdin>:1588:36: warning: transtypage vers un pointeur depuis un entier de taille différente [-Wint-to-pointer-cast]
 <stdin>:40:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068050 » en « 2147483730 » [-Woverflow]
 <stdin>:43:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068056 » en « 2147483736 » [-Woverflow]
 <stdin>:47:24: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
@@ -2033,22 +2021,34 @@ include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une va
 <stdin>:257:14: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 <stdin>: Dans la fonction « unk_2c4c »:
 <stdin>:384:14: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-python3 tools/preproc.py src/complex_oam.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/complex_oam.o -std=gnu89 -
-python3 tools/preproc.py src/cutscenes/before_ruins_test.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/before_ruins_test.o -std=gnu89 -
-<stdin>: Dans la fonction « ClipdataSetupCode »:
-<stdin>:26:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068288 » en « 2147483968 » [-Woverflow]
-python3 tools/preproc.py src/connection.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/connection.o -std=gnu89 -
+<stdin>: Dans la fonction « UpdatePsgSounds »:
+<stdin>:423:38: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
+<stdin>: Dans la fonction « GetNoteDelay »:
+<stdin>:1362:51: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
+<stdin>: Dans la fonction « FusionGalleryConnectProcess »:
+<stdin>:78:29: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
+<stdin>:78:49: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
+<stdin>: Dans la fonction « AudioCommand_Voice »:
+<stdin>:1580:43: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
+<stdin>:1580:36: warning: transtypage vers un pointeur depuis un entier de taille différente [-Wint-to-pointer-cast]
+<stdin>:1588:43: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
+<stdin>:1588:36: warning: transtypage vers un pointeur depuis un entier de taille différente [-Wint-to-pointer-cast]
 <stdin>: Dans la fonction « ChozodiaEscapeVBlank »:
 <stdin>:28:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
 <stdin>: Dans la fonction « ChozodiaEscapeInit »:
 <stdin>:470:48: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
+python3 tools/preproc.py src/complex_oam.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/complex_oam.o -std=gnu89 -
+<stdin>: Dans la fonction « ClipdataSetupCode »:
+<stdin>:26:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068288 » en « 2147483968 » [-Woverflow]
+python3 tools/preproc.py src/connection.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/connection.o -std=gnu89 -
+python3 tools/preproc.py src/cutscenes/before_ruins_test.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/before_ruins_test.o -std=gnu89 -
 python3 tools/preproc.py src/cutscenes/cutscene_utils.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/cutscene_utils.o -std=gnu89 -
 python3 tools/preproc.py src/cutscenes/enter_tourian.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/enter_tourian.o -std=gnu89 -
 python3 tools/preproc.py src/cutscenes/getting_fully_powered_suit.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/getting_fully_powered_suit.o -std=gnu89 -
 python3 tools/preproc.py src/cutscenes/kraid_rising.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/kraid_rising.o -std=gnu89 -
+python3 tools/preproc.py src/cutscenes/mecha_sees_samus.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/mecha_sees_samus.o -std=gnu89 -
 python3 tools/preproc.py src/cutscenes/mother_brain_close_up.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/mother_brain_close_up.o -std=gnu89 -
 python3 tools/preproc.py src/cutscenes/ridley_in_space.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/ridley_in_space.o -std=gnu89 -
-python3 tools/preproc.py src/cutscenes/mecha_sees_samus.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/mecha_sees_samus.o -std=gnu89 -
 python3 tools/preproc.py src/cutscenes/ridley_landing.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/ridley_landing.o -std=gnu89 -
 python3 tools/preproc.py src/cutscenes/ridley_spawn.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/ridley_spawn.o -std=gnu89 -
 In file included from <stdin>:6:
@@ -2056,11 +2056,11 @@ include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une va
     7 | extern const s16 sSineTable[2*PI + PI_2];
       | ^~~~~~
 python3 tools/preproc.py src/cutscenes/samus_in_blue_ship.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/samus_in_blue_ship.o -std=gnu89 -
-In file included from <stdin>:8:
+In file included from <stdin>:7:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
       | ^~~~~~
-In file included from <stdin>:7:
+In file included from <stdin>:8:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
       | ^~~~~~
@@ -2069,14 +2069,14 @@ include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une va
     7 | extern const s16 sSineTable[2*PI + PI_2];
       | ^~~~~~
 python3 tools/preproc.py src/cutscenes/statue_opening.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/statue_opening.o -std=gnu89 -
-In file included from <stdin>:6:
-include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
-    7 | extern const s16 sSineTable[2*PI + PI_2];
-      | ^~~~~~
 python3 tools/preproc.py src/cutscenes/story_text_cutscene.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/cutscenes/story_text_cutscene.o -std=gnu89 -
 python3 tools/preproc.py src/data/animated_graphics_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/animated_graphics_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/animated_tiles_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/animated_tiles_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/audio.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/audio.o -std=gnu89 -
+In file included from <stdin>:6:
+include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
+    7 | extern const s16 sSineTable[2*PI + PI_2];
+      | ^~~~~~
 python3 tools/preproc.py src/data/block_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/block_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/cable_link_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cable_link_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/chozodia_escape_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/chozodia_escape_data.o -std=gnu89 -
@@ -2094,21 +2094,21 @@ python3 tools/preproc.py src/data/cutscenes/mecha_sees_samus_data.c charmap.txt 
 python3 tools/preproc.py src/data/cutscenes/mother_brain_close_up_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cutscenes/mother_brain_close_up_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/cutscenes/ridley_in_space_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cutscenes/ridley_in_space_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/cutscenes/ridley_landing_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cutscenes/ridley_landing_data.o -std=gnu89 -
+python3 tools/preproc.py src/data/cutscenes/ridley_spawn_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cutscenes/ridley_spawn_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/cutscenes/samus_in_blue_ship_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cutscenes/samus_in_blue_ship_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/cutscenes/statue_opening_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cutscenes/statue_opening_data.o -std=gnu89 -
-python3 tools/preproc.py src/data/cutscenes/ridley_spawn_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cutscenes/ridley_spawn_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/cutscenes/story_text_cutscene_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/cutscenes/story_text_cutscene_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/default_background_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/default_background_data.o -std=gnu89 -
-python3 tools/preproc.py src/data/empty_datatypes.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/empty_datatypes.o -std=gnu89 -
 python3 tools/preproc.py src/data/demo_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/demo_data.o -std=gnu89 -
+python3 tools/preproc.py src/data/empty_datatypes.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/empty_datatypes.o -std=gnu89 -
 python3 tools/preproc.py src/data/ending_and_gallery_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/ending_and_gallery_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/fusion_gallery_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/fusion_gallery_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/generic_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/generic_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/hatch_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/hatch_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/haze_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/haze_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/hud_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/hud_data.o -std=gnu89 -
-python3 tools/preproc.py src/data/intro_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/intro_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/in_game_cutscene_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/in_game_cutscene_data.o -std=gnu89 -
+python3 tools/preproc.py src/data/intro_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/intro_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/io_transfer_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/io_transfer_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/menus/boot_debug_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/menus/boot_debug_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/menus/erase_sram_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/menus/erase_sram_data.o -std=gnu89 -
@@ -2123,8 +2123,8 @@ python3 tools/preproc.py src/data/menus/language_select_data.c charmap.txt | cpp
 python3 tools/preproc.py src/data/menus/pause_screen_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/menus/pause_screen_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/menus/pause_screen_map_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/menus/pause_screen_map_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/menus/pause_screen_sub_menus_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/menus/pause_screen_sub_menus_data.o -std=gnu89 -
-python3 tools/preproc.py src/data/menus/title_screen_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/menus/title_screen_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/menus/status_screen_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/menus/status_screen_data.o -std=gnu89 -
+python3 tools/preproc.py src/data/menus/title_screen_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/menus/title_screen_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/music_track_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/music_track_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/nes_metroid.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/nes_metroid.o -std=gnu89 -
 python3 tools/preproc.py src/data/particle_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/particle_data.o -std=gnu89 -
@@ -2147,8 +2147,8 @@ python3 tools/preproc.py src/data/rooms/brinstar/brinstar_21.c charmap.txt | cpp
 python3 tools/preproc.py src/data/rooms/brinstar/brinstar_22.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_22.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/brinstar/brinstar_23.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_23.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/brinstar/brinstar_24.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_24.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/brinstar/brinstar_25.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_25.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/brinstar/brinstar_26.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_26.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/brinstar/brinstar_25.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_25.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/brinstar/brinstar_27.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_27.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/brinstar/brinstar_28.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_28.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/brinstar/brinstar_29.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/brinstar/brinstar_29.o -std=gnu89 -
@@ -2178,11 +2178,11 @@ python3 tools/preproc.py src/data/rooms/chozodia/chozodia_10.c charmap.txt | cpp
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_11.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_11.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_12.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_12.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_13.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_13.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/chozodia/chozodia_14.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_14.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_15.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_15.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/chozodia/chozodia_14.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_14.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_16.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_16.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/chozodia/chozodia_18.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_18.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_17.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_17.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/chozodia/chozodia_18.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_18.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_19.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_19.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_1.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_1.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_20.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_20.o -std=gnu89 -
@@ -2213,8 +2213,8 @@ python3 tools/preproc.py src/data/rooms/chozodia/chozodia_42.c charmap.txt | cpp
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_43.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_43.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_44.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_44.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_45.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_45.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/chozodia/chozodia_46.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_46.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_47.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_47.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/chozodia/chozodia_46.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_46.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_48.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_48.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_49.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_49.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_4.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_4.o -std=gnu89 -
@@ -2222,11 +2222,11 @@ python3 tools/preproc.py src/data/rooms/chozodia/chozodia_50.c charmap.txt | cpp
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_51.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_51.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_52.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_52.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_53.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_53.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/chozodia/chozodia_55.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_55.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_54.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_54.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/chozodia/chozodia_55.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_55.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_56.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_56.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/chozodia/chozodia_58.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_58.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_57.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_57.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/chozodia/chozodia_58.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_58.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_59.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_59.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_5.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_5.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_60.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_60.o -std=gnu89 -
@@ -2243,8 +2243,8 @@ python3 tools/preproc.py src/data/rooms/chozodia/chozodia_6.c charmap.txt | cpp 
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_70.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_70.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_71.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_71.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_72.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_72.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/chozodia/chozodia_73.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_73.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_74.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_74.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/chozodia/chozodia_73.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_73.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_75.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_75.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_76.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_76.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_77.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_77.o -std=gnu89 -
@@ -2254,9 +2254,9 @@ python3 tools/preproc.py src/data/rooms/chozodia/chozodia_7.c charmap.txt | cpp 
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_80.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_80.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_81.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_81.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_82.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_82.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/chozodia/chozodia_83.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_83.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_84.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_84.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_85.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_85.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/chozodia/chozodia_83.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_83.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_86.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_86.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_87.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_87.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_88.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_88.o -std=gnu89 -
@@ -2264,8 +2264,8 @@ python3 tools/preproc.py src/data/rooms/chozodia/chozodia_89.c charmap.txt | cpp
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_8.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_8.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_90.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_90.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_91.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_91.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/chozodia/chozodia_93.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_93.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_92.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_92.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/chozodia/chozodia_93.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_93.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_94.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_94.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_95.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_95.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/chozodia/chozodia_96.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/chozodia/chozodia_96.o -std=gnu89 -
@@ -2287,8 +2287,8 @@ python3 tools/preproc.py src/data/rooms/crateria/crateria_19.c charmap.txt | cpp
 python3 tools/preproc.py src/data/rooms/crateria/crateria_1.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_1.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/crateria/crateria_20.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_20.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/crateria/crateria_21.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_21.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/crateria/crateria_3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_3.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/crateria/crateria_2.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_2.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/crateria/crateria_3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_3.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/crateria/crateria_4.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_4.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/crateria/crateria_5.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_5.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/crateria/crateria_6.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/crateria/crateria_6.o -std=gnu89 -
@@ -2299,8 +2299,8 @@ python3 tools/preproc.py src/data/rooms_data.c charmap.txt | cpp -DREGION_EU -DN
 python3 tools/preproc.py src/data/rooms/kraid/bg3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/bg3.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_0.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_0.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_10.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_10.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/kraid/kraid_12.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_12.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_11.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_11.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/kraid/kraid_12.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_12.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_13.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_13.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_14.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_14.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_16.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_16.o -std=gnu89 -
@@ -2314,18 +2314,18 @@ python3 tools/preproc.py src/data/rooms/kraid/kraid_21.c charmap.txt | cpp -DREG
 python3 tools/preproc.py src/data/rooms/kraid/kraid_22.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_22.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_23.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_23.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_24.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_24.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/kraid/kraid_26.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_26.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_25.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_25.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/kraid/kraid_28.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_28.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/kraid/kraid_26.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_26.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_27.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_27.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/kraid/kraid_28.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_28.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_29.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_29.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_2.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_2.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_30.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_30.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_31.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_31.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_32.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_32.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_33.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_33.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/kraid/kraid_34.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_34.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_35.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_35.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/kraid/kraid_34.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_34.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_36.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_36.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_37.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_37.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/kraid/kraid_38.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/kraid/kraid_38.o -std=gnu89 -
@@ -2364,17 +2364,17 @@ python3 tools/preproc.py src/data/rooms/norfair/norfair_28.c charmap.txt | cpp -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_29.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_29.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_2.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_2.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_30.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_30.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/norfair/norfair_32.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_32.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_31.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_31.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/norfair/norfair_32.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_32.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_33.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_33.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_34.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_34.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_35.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_35.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_36.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_36.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_37.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_37.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_38.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_38.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/norfair/norfair_40.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_40.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_39.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_39.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_3.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/norfair/norfair_40.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_40.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_41.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_41.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_42.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_42.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_43.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_43.o -std=gnu89 -
@@ -2396,8 +2396,8 @@ python3 tools/preproc.py src/data/rooms/norfair/norfair_5.c charmap.txt | cpp -D
 python3 tools/preproc.py src/data/rooms/norfair/norfair_6.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_6.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_7.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_7.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_8.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_8.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/ridley/bg3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/bg3.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/norfair/norfair_9.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/norfair/norfair_9.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/ridley/bg3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/bg3.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/ridley/ridley_0.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_0.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/ridley/ridley_10.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_10.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/ridley/ridley_11.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_11.o -std=gnu89 -
@@ -2426,15 +2426,15 @@ python3 tools/preproc.py src/data/rooms/ridley/ridley_31.c charmap.txt | cpp -DR
 python3 tools/preproc.py src/data/rooms/ridley/ridley_32.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_32.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/ridley/ridley_3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_3.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/ridley/ridley_4.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_4.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/ridley/ridley_6.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_6.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/ridley/ridley_5.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_5.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/ridley/ridley_6.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_6.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/ridley/ridley_7.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_7.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/ridley/ridley_9.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_9.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/ridley/ridley_8.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_8.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/ridley/ridley_9.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/ridley/ridley_9.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/test_rooms_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/test_rooms_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/bg3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/bg3.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/tourian/tourian_0.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_0.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_10.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_10.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/tourian/tourian_0.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_0.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_11.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_11.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_12.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_12.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_13.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_13.o -std=gnu89 -
@@ -2445,14 +2445,14 @@ python3 tools/preproc.py src/data/rooms/tourian/tourian_17.c charmap.txt | cpp -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_18.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_18.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_19.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_19.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_1.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_1.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/tourian/tourian_2.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_2.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_3.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/tourian/tourian_2.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_2.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_4.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_4.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_5.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_5.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_6.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_6.o -std=gnu89 -
+python3 tools/preproc.py src/data/rooms/tourian/tourian_7.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_7.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_8.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_8.o -std=gnu89 -
 python3 tools/preproc.py src/data/rooms/tourian/tourian_9.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_9.o -std=gnu89 -
-python3 tools/preproc.py src/data/rooms/tourian/tourian_7.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/rooms/tourian/tourian_7.o -std=gnu89 -
 python3 tools/preproc.py src/data/samus/arm_cannon_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/samus/arm_cannon_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/samus_close_up_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/samus_close_up_data.o -std=gnu89 -
 python3 tools/preproc.py src/data/samus/samus_animation_pointers.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/samus/samus_animation_pointers.o -std=gnu89 -
@@ -2469,36 +2469,36 @@ python3 tools/preproc.py src/data/sprites/baristute.c charmap.txt | cpp -DREGION
 python3 tools/preproc.py src/data/sprites/boss_statues.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/boss_statues.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/charge_beam.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/charge_beam.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/chozo_statue.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/chozo_statue.o -std=gnu89 -
-/tmp/ccWZMAUc.s: Messages de l'assembleur:
-/tmp/ccWZMAUc.s:4: Avertissement: initialisation incorrecte des attributs de section de .rodata
 python3 tools/preproc.py src/data/sprites/crocomire.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/crocomire.o -std=gnu89 -
+/tmp/ccMi5hVY.s: Messages de l'assembleur:
+/tmp/ccMi5hVY.s:4: Avertissement: initialisation incorrecte des attributs de section de .rodata
 python3 tools/preproc.py src/data/sprites/deorem.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/deorem.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/dessgeega.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/dessgeega.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/dragon.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/dragon.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/elevator_pad.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/elevator_pad.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/elevator_statue.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/elevator_statue.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/enemy_drop.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/enemy_drop.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/escape_gate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/escape_gate.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/escape_ship.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/escape_ship.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/escape_gate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/escape_gate.o -std=gnu89 -
 python3 tools/preproc.py src/data/spriteset.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/spriteset.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/falling_chozo_pillar.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/falling_chozo_pillar.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/gadora.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/gadora.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/geega.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/geega.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/gamet.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/gamet.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/geega.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/geega.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/gekitai_machine.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/gekitai_machine.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/geron.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/geron.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/geron_norfair.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/geron_norfair.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/geruta.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/geruta.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/glass_tube.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/glass_tube.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/hive.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/hive.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/gunship.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/gunship.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/hive.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/hive.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/holtz.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/holtz.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/imago.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/imago.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/imago_cocoon.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/imago_cocoon.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/imago_larva.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/imago_larva.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/imago_larva_right_side.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/imago_larva_right_side.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/kraid.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/kraid.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/map_station.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/map_station.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/kraid.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/kraid.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/mecha_ridley.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/mecha_ridley.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/mella.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/mella.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/message_banner.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/message_banner.o -std=gnu89 -
@@ -2514,14 +2514,14 @@ python3 tools/preproc.py src/data/sprites/power_grip.c charmap.txt | cpp -DREGIO
 python3 tools/preproc.py src/data/sprites/reo.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/reo.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/rinka.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/rinka.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/ridley.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/ridley.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/ripper.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/ripper.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/ripper2.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/ripper2.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/ripper.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/ripper.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/rising_chozo_pillar.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/rising_chozo_pillar.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/ruins_test.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/ruins_test.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/save_platform.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/save_platform.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/save_platform_chozodia.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/save_platform_chozodia.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/searchlight.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/searchlight.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/searchlight_eye.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/searchlight_eye.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/searchlight.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/searchlight.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/security_gate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/security_gate.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/security_laser.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/security_laser.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/sidehopper.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/sidehopper.o -std=gnu89 -
@@ -2529,20 +2529,20 @@ python3 tools/preproc.py src/data/sprites/skree.c charmap.txt | cpp -DREGION_EU 
 python3 tools/preproc.py src/data/sprites/skultera.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/skultera.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/sova.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/sova.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/space_pirate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/space_pirate.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/space_pirate_carrying_power_bomb.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/space_pirate_carrying_power_bomb.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/squeept.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/squeept.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/space_pirate_carrying_power_bomb.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/space_pirate_carrying_power_bomb.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/steam.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/steam.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/tangle_vine.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/tangle_vine.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/unknown_item_block.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/unknown_item_block.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/unused_sprites.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/unused_sprites.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/unknown_item_chozo_statue.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/unknown_item_chozo_statue.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/unused_sprites.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/unused_sprites.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/viola.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/viola.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/waver.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/waver.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/worker_robot.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/worker_robot.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/zebbo.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/zebbo.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/zeb.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/zeb.o -std=gnu89 -
-python3 tools/preproc.py src/data/sprites/zeela.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/zeela.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/zebetite_and_cannon.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/zebetite_and_cannon.o -std=gnu89 -
+python3 tools/preproc.py src/data/sprites/zeela.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/zeela.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/zipline.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/zipline.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/zipline_generator.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/zipline_generator.o -std=gnu89 -
 python3 tools/preproc.py src/data/sprites/zoomer.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/sprites/zoomer.o -std=gnu89 -
@@ -2553,10 +2553,10 @@ python3 tools/preproc.py src/data/tilesets/tilesets_set2.c charmap.txt | cpp -DR
 python3 tools/preproc.py src/data/tilesets/tilesets_set3.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/tilesets/tilesets_set3.o -std=gnu89 -
 python3 tools/preproc.py src/data/tilesets/tilesets_set4.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/tilesets/tilesets_set4.o -std=gnu89 -
 python3 tools/preproc.py src/data/tilesets/tilesets_set5.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/tilesets/tilesets_set5.o -std=gnu89 -
-python3 tools/preproc.py src/data/tilesets/tilesets_set6.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/tilesets/tilesets_set6.o -std=gnu89 -
 python3 tools/preproc.py src/data/tilesets/tilesets_set7.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/tilesets/tilesets_set7.o -std=gnu89 -
-python3 tools/preproc.py src/data/visual_effects_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/visual_effects_data.o -std=gnu89 -
+python3 tools/preproc.py src/data/tilesets/tilesets_set6.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/tilesets/tilesets_set6.o -std=gnu89 -
 python3 tools/preproc.py src/data/tourian_escape_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/tourian_escape_data.o -std=gnu89 -
+python3 tools/preproc.py src/data/visual_effects_data.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/data/visual_effects_data.o -std=gnu89 -
 python3 tools/preproc.py src/demo.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/demo.o -std=gnu89 -
 python3 tools/preproc.py src/demo_input.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/demo_input.o -std=gnu89 -
 python3 tools/preproc.py src/display.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/display.o -std=gnu89 -
@@ -2567,19 +2567,13 @@ python3 tools/preproc.py src/event.c charmap.txt | cpp -DREGION_EU -DNATIVE -nos
 python3 tools/preproc.py src/fixed_point.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/fixed_point.o -std=gnu89 -
 python3 tools/preproc.py src/fusion_gallery.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/fusion_gallery.o -std=gnu89 -
 python3 tools/preproc.py src/gadora_hatch.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/gadora_hatch.o -std=gnu89 -
-python3 tools/preproc.py src/globals2.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/globals2.o -std=gnu89 -
 python3 tools/preproc.py src/globals1.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/globals1.o -std=gnu89 -
-python3 tools/preproc.py src/haze.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/haze.o -std=gnu89 -
-python3 tools/preproc.py src/hud.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/hud.o -std=gnu89 -
+python3 tools/preproc.py src/globals2.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/globals2.o -std=gnu89 -
 <stdin>: Dans la fonction « EscapeCheckReloadGraphics »:
 <stdin>:94:25: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068992 » en « 2147484672 » [-Woverflow]
+python3 tools/preproc.py src/haze.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/haze.o -std=gnu89 -
+python3 tools/preproc.py src/hud.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/hud.o -std=gnu89 -
 python3 tools/preproc.py src/hud_generic.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/hud_generic.o -std=gnu89 -
-<stdin>: Dans la fonction « FusionGalleryVBlank »:
-<stdin>:25:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
-<stdin>: Dans la fonction « FusionGalleryInit »:
-<stdin>:55:52: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
-python3 tools/preproc.py src/in_game.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/in_game.o -std=gnu89 -
-python3 tools/preproc.py src/in_game_cutscene.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/in_game_cutscene.o -std=gnu89 -
 <stdin>: Dans la fonction « GalleryVBlank »:
 <stdin>:399:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
 <stdin>: Dans la fonction « EndScreenVBlank »:
@@ -2590,55 +2584,61 @@ python3 tools/preproc.py src/in_game_cutscene.c charmap.txt | cpp -DREGION_EU -D
 <stdin>:487:48: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
 <stdin>: Dans la fonction « EndScreenInit »:
 <stdin>:1063:48: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
+python3 tools/preproc.py src/in_game.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/in_game.o -std=gnu89 -
 <stdin>: Dans la fonction « EndingImageInit »:
 <stdin>:1410:48: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
 <stdin>: Dans la fonction « UnlockedOptionsInit »:
 <stdin>:1750:48: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
+<stdin>: Dans la fonction « FusionGalleryVBlank »:
+<stdin>:25:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
+<stdin>: Dans la fonction « FusionGalleryInit »:
+<stdin>:55:52: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
 <stdin>: Dans la fonction « GalleryInit »:
 <stdin>:2075:52: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
 python3 tools/preproc.py src/in_game_timer.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/in_game_timer.o -std=gnu89 -
+python3 tools/preproc.py src/in_game_cutscene.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/in_game_cutscene.o -std=gnu89 -
 python3 tools/preproc.py src/init_game.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/init_game.o -std=gnu89 -
 python3 tools/preproc.py src/init_helpers.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/init_helpers.o -std=gnu89 -
 python3 tools/preproc.py src/intro.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/intro.o -std=gnu89 -
+python3 tools/preproc.py src/link.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/link.o -std=gnu89 -
 <stdin>: Dans la fonction « HudGenericLoadCommonSpriteGfx »:
 <stdin>:24:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562075136 » en « 2147490816 » [-Woverflow]
-python3 tools/preproc.py src/link.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/link.o -std=gnu89 -
-python3 tools/preproc.py src/location_text.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/location_text.o -std=gnu89 -
-python3 tools/preproc.py src/menus/boot_debug.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/boot_debug.o -std=gnu89 -
-<stdin>: Dans la fonction « HudUpdateGfx »:
-<stdin>:1225:25: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068016 » en « 2147483696 » [-Woverflow]
 <stdin>: Dans la fonction « VBlankCodeInGameLoad »:
 <stdin>:312:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
+<stdin>: Dans la fonction « HudUpdateGfx »:
+<stdin>:1225:25: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068016 » en « 2147483696 » [-Woverflow]
 <stdin>: Dans la fonction « TransferSamusAndBgGraphics »:
 <stdin>:371:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
 <stdin>: Dans la fonction « VBlankCodeInGame »:
 <stdin>:395:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
 <stdin>: Dans la fonction « InitAndLoadGenerics »:
 <stdin>:481:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068064 » en « 2147483744 » [-Woverflow]
+python3 tools/preproc.py src/menus/boot_debug.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/boot_debug.o -std=gnu89 -
+python3 tools/preproc.py src/location_text.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/location_text.o -std=gnu89 -
 python3 tools/preproc.py src/menus/erase_sram.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/erase_sram.o -std=gnu89 -
 python3 tools/preproc.py src/menus/file_select.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/file_select.o -std=gnu89 -
 python3 tools/preproc.py src/menus/game_over.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/game_over.o -std=gnu89 -
 python3 tools/preproc.py src/menus/pause_screen.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/pause_screen.o -std=gnu89 -
 python3 tools/preproc.py src/menus/pause_screen_map.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/pause_screen_map.o -std=gnu89 -
 python3 tools/preproc.py src/menus/pause_screen_sub_menus.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/pause_screen_sub_menus.o -std=gnu89 -
-<stdin>: Dans la fonction « IntroInit »:
-<stdin>:83:48: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
 <stdin>: Dans la fonction « FusionGalleryLinkProcess »:
 <stdin>:50:56: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071578845186 » en « 2164260866 » [-Woverflow]
 <stdin>:51:56: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071578845188 » en « 2164260868 » [-Woverflow]
+<stdin>: Dans la fonction « IntroInit »:
+<stdin>:83:48: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
 python3 tools/preproc.py src/menus/status_screen.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/status_screen.o -std=gnu89 -
 python3 tools/preproc.py src/menus/title_screen.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/menus/title_screen.o -std=gnu89 -
 python3 tools/preproc.py src/minimap.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/minimap.o -std=gnu89 -
-python3 tools/preproc.py src/multiboot.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/multiboot.o -std=gnu89 -
 python3 tools/preproc.py src/music_wrappers.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/music_wrappers.o -std=gnu89 -
+python3 tools/preproc.py src/multiboot.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/multiboot.o -std=gnu89 -
 <stdin>: Dans la fonction « EraseSramInit »:
 <stdin>:366:48: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954444 » en « 2231370124 » [-Woverflow]
 <stdin>: Dans la fonction « EraseSramVBlank »:
 <stdin>:489:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
 python3 tools/preproc.py src/oam_id.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/oam_id.o -std=gnu89 -
-python3 tools/preproc.py src/particle.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/particle.o -std=gnu89 -
 <stdin>: Dans la fonction « GameOverVBlank »:
 <stdin>:412:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
+python3 tools/preproc.py src/particle.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/particle.o -std=gnu89 -
 <stdin>: Dans la fonction « FileSelectVBlank »:
 <stdin>:4859:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
 <stdin>: Dans la fonction « PauseScreenVBlank »:
@@ -2646,9 +2646,6 @@ python3 tools/preproc.py src/particle.c charmap.txt | cpp -DREGION_EU -DNATIVE -
 <stdin>: Dans la fonction « PauseScreenInit »:
 <stdin>:2212:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
 <stdin>:2576:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
-python3 tools/preproc.py src/process_pause_press.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/process_pause_press.o -std=gnu89 -
-<stdin>: Dans la fonction « TitleScreenVBlank »:
-<stdin>:1399:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
 python3 tools/preproc.py src/power_bomb_explosion.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/power_bomb_explosion.o -std=gnu89 -
 <stdin>: Dans la fonction « DMA2IntrCode »:
 <stdin>:22:59: warning: la conversion depuis « long unsigned int » vers « vu32 » {alias « unsigned int »} change la valeur de « 18446744071633371140 » en « 2218786820 » [-Woverflow]
@@ -2670,10 +2667,13 @@ python3 tools/preproc.py src/power_bomb_explosion.c charmap.txt | cpp -DREGION_E
 <stdin>: Dans la fonction « DecreaseMusicVolume »:
 <stdin>:851:53: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 <stdin>:852:53: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
+<stdin>: Dans la fonction « TitleScreenVBlank »:
+<stdin>:1399:21: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071629177088 » en « 2214592768 » [-Woverflow]
+python3 tools/preproc.py src/process_pause_press.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/process_pause_press.o -std=gnu89 -
 python3 tools/preproc.py src/projectile.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/projectile.o -std=gnu89 -
 python3 tools/preproc.py src/projectile_util.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/projectile_util.o -std=gnu89 -
-python3 tools/preproc.py src/room_cutscene.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/room_cutscene.o -std=gnu89 -
 python3 tools/preproc.py src/room.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/room.o -std=gnu89 -
+python3 tools/preproc.py src/room_cutscene.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/room_cutscene.o -std=gnu89 -
 python3 tools/preproc.py src/room_music.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/room_music.o -std=gnu89 -
 python3 tools/preproc.py src/samus.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/samus.o -std=gnu89 -
 python3 tools/preproc.py src/save_file.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/save_file.o -std=gnu89 -
@@ -2682,7 +2682,6 @@ python3 tools/preproc.py src/screen_shake.c charmap.txt | cpp -DREGION_EU -DNATI
 python3 tools/preproc.py src/scroll.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/scroll.o -std=gnu89 -
 python3 tools/preproc.py src/soft_reset.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/soft_reset.o -std=gnu89 -
 python3 tools/preproc.py src/soft_reset_input.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/soft_reset_input.o -std=gnu89 -
-python3 tools/preproc.py src/sprite.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprite.o -std=gnu89 -
 <stdin>: Dans la fonction « ProjectileLoadGraphics »:
 <stdin>:754:25: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068096 » en « 2147483776 » [-Woverflow]
 <stdin>:755:25: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068224 » en « 2147483904 » [-Woverflow]
@@ -2708,8 +2707,8 @@ python3 tools/preproc.py src/sprite.c charmap.txt | cpp -DREGION_EU -DNATIVE -no
 <stdin>:810:29: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068224 » en « 2147483904 » [-Woverflow]
 <stdin>:811:29: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068224 » en « 2147483904 » [-Woverflow]
 <stdin>:812:29: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068224 » en « 2147483904 » [-Woverflow]
+python3 tools/preproc.py src/sprite.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprite.o -std=gnu89 -
 python3 tools/preproc.py src/sprite_debris.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprite_debris.o -std=gnu89 -
-python3 tools/preproc.py src/sprites_ai/acid_worm.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/acid_worm.o -std=gnu89 -
 <stdin>: Dans la fonction « SramRead_FileScreenOptionsUnlocked »:
 <stdin>:164:58: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071578845216 » en « 2164260896 » [-Woverflow]
 <stdin>:168:62: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071578845216 » en « 2164260896 » [-Woverflow]
@@ -2721,7 +2720,6 @@ python3 tools/preproc.py src/sprites_ai/acid_worm.c charmap.txt | cpp -DREGION_E
 <stdin>:895:46: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 <stdin>:902:54: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 <stdin>:906:46: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-python3 tools/preproc.py src/sprites_ai/area_banner.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/area_banner.o -std=gnu89 -
 <stdin>: Dans la fonction « SramRead_MostRecentSaveFile »:
 <stdin>:1326:54: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071578845216 » en « 2164260896 » [-Woverflow]
 <stdin>: Dans la fonction « SramRead_SoundMode »:
@@ -2734,18 +2732,19 @@ python3 tools/preproc.py src/sprites_ai/area_banner.c charmap.txt | cpp -DREGION
 <stdin>: Dans la fonction « SramRead_TimeAttack »:
 <stdin>:1696:33: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068096 » en « 2147483776 » [-Woverflow]
 <stdin>:1705:29: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068096 » en « 2147483776 » [-Woverflow]
+python3 tools/preproc.py src/sprites_ai/acid_worm.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/acid_worm.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/area_banner.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/area_banner.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/atomic.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/atomic.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/baristute.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/baristute.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/black_space_pirate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/black_space_pirate.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/boss_statues.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/boss_statues.o -std=gnu89 -
 <stdin>: Dans la fonction « SamusInit »:
 <stdin>:8074:56: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954055 » en « 2231369735 » [-Woverflow]
 <stdin>:8075:56: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954053 » en « 2231369733 » [-Woverflow]
 <stdin>:8076:56: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954049 » en « 2231369729 » [-Woverflow]
 <stdin>:8077:56: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954050 » en « 2231369730 » [-Woverflow]
 <stdin>:8093:56: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071645954096 » en « 2231369776 » [-Woverflow]
-python3 tools/preproc.py src/sprites_ai/boss_statues.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/boss_statues.o -std=gnu89 -
-python3 tools/preproc.py src/sprites_ai/black_space_pirate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/black_space_pirate.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/charge_beam.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/charge_beam.o -std=gnu89 -
-python3 tools/preproc.py src/sprites_ai/chozo_ball.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/chozo_ball.o -std=gnu89 -
 In file included from <stdin>:9:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
@@ -2761,7 +2760,6 @@ include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une va
 <stdin>:1050:29: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068000 » en « 2147483680 » [-Woverflow]
 <stdin>:1068:29: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068000 » en « 2147483680 » [-Woverflow]
 <stdin>:1088:29: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068000 » en « 2147483680 » [-Woverflow]
-python3 tools/preproc.py src/sprites_ai/chozo_statue.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/chozo_statue.o -std=gnu89 -
 <stdin>: Dans la fonction « SpriteDraw »:
 <stdin>:1554:58: warning: la conversion non-signée de « int » vers « unsigned char:1 » change la valeur de « 3 » en « 1 » [-Woverflow]
 <stdin>:1555:62: warning: la conversion non-signée de « int » vers « unsigned char:3 » change la valeur de « 29 » en « 5 » [-Woverflow]
@@ -2771,11 +2769,13 @@ python3 tools/preproc.py src/sprites_ai/chozo_statue.c charmap.txt | cpp -DREGIO
 <stdin>:1571:62: warning: la conversion non-signée de « int » vers « unsigned char:3 » change la valeur de « 31 » en « 7 » [-Woverflow]
 <stdin>:1576:58: warning: la conversion non-signée de « int » vers « unsigned char:1 » change la valeur de « 3 » en « 1 » [-Woverflow]
 <stdin>:1577:62: warning: la conversion non-signée de « int » vers « unsigned char:3 » change la valeur de « 30 » en « 6 » [-Woverflow]
+python3 tools/preproc.py src/sprites_ai/chozo_ball.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/chozo_ball.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/chozo_statue.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/chozo_statue.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/chozo_statue_movement.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/chozo_statue_movement.o -std=gnu89 -
 In file included from <stdin>:7:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
       | ^~~~~~
-python3 tools/preproc.py src/sprites_ai/chozo_statue_movement.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/chozo_statue_movement.o -std=gnu89 -
 In file included from <stdin>:7:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
@@ -2787,8 +2787,8 @@ python3 tools/preproc.py src/sprites_ai/dragon.c charmap.txt | cpp -DREGION_EU -
 python3 tools/preproc.py src/sprites_ai/elevator_pad.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/elevator_pad.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/elevator_statue.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/elevator_statue.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/enemy_drop.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/enemy_drop.o -std=gnu89 -
-python3 tools/preproc.py src/sprites_ai/escape_ship.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/escape_ship.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/escape_gate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/escape_gate.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/escape_ship.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/escape_ship.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/escape_ship_pirate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/escape_ship_pirate.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/explosion_zebes_escape.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/explosion_zebes_escape.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/falling_chozo_pillar.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/falling_chozo_pillar.o -std=gnu89 -
@@ -2811,12 +2811,12 @@ python3 tools/preproc.py src/sprites_ai/kraid.c charmap.txt | cpp -DREGION_EU -D
 python3 tools/preproc.py src/sprites_ai/map_station.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/map_station.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/mecha_ridley.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/mecha_ridley.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/mella.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/mella.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/message_banner.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/message_banner.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/metroid.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/metroid.o -std=gnu89 -
 In file included from <stdin>:9:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
       | ^~~~~~
-python3 tools/preproc.py src/sprites_ai/message_banner.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/message_banner.o -std=gnu89 -
-python3 tools/preproc.py src/sprites_ai/metroid.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/metroid.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/morph_ball.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/morph_ball.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/morph_ball_launcher.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/morph_ball_launcher.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/mother_brain.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/mother_brain.o -std=gnu89 -
@@ -2840,13 +2840,11 @@ python3 tools/preproc.py src/sprites_ai/searchlight_eye.c charmap.txt | cpp -DRE
 python3 tools/preproc.py src/sprites_ai/security_gate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/security_gate.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/security_laser.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/security_laser.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/sidehopper.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/sidehopper.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/skree.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/skree.o -std=gnu89 -
 In file included from <stdin>:8:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
       | ^~~~~~
-python3 tools/preproc.py src/sprites_ai/skree.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/skree.o -std=gnu89 -
-python3 tools/preproc.py src/sprites_ai/skultera.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/skultera.o -std=gnu89 -
-python3 tools/preproc.py src/sprites_ai/sova.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/sova.o -std=gnu89 -
 <stdin>: Dans la fonction « RuinsTestSamusReflectionStart »:
 <stdin>:1883:37: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068160 » en « 2147483840 » [-Woverflow]
 <stdin>:1884:37: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068096 » en « 2147483776 » [-Woverflow]
@@ -2855,6 +2853,8 @@ python3 tools/preproc.py src/sprites_ai/sova.c charmap.txt | cpp -DREGION_EU -DN
 <stdin>: Dans la fonction « RuinsTestSamusReflectionEnd »:
 <stdin>:2303:33: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068160 » en « 2147483840 » [-Woverflow]
 <stdin>:2304:33: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068096 » en « 2147483776 » [-Woverflow]
+python3 tools/preproc.py src/sprites_ai/skultera.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/skultera.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/sova.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/sova.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/space_pirate.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/space_pirate.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/space_pirate_carrying_power_bomb.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/space_pirate_carrying_power_bomb.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/squeept.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/squeept.o -std=gnu89 -
@@ -2863,9 +2863,9 @@ python3 tools/preproc.py src/sprites_ai/tangle_vine.c charmap.txt | cpp -DREGION
 python3 tools/preproc.py src/sprites_ai/unknown_item_block.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/unknown_item_block.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/unknown_item_chozo_statue.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/unknown_item_chozo_statue.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/unused_sprites.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/unused_sprites.o -std=gnu89 -
-python3 tools/preproc.py src/sprites_ai/waver.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/waver.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/viola.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/viola.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/water_drop.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/water_drop.o -std=gnu89 -
+python3 tools/preproc.py src/sprites_ai/waver.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/waver.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/worker_robot.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/worker_robot.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/zebbo.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/zebbo.o -std=gnu89 -
 python3 tools/preproc.py src/sprites_ai/zeb.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/sprites_ai/zeb.o -std=gnu89 -
@@ -2882,6 +2882,12 @@ python3 tools/preproc.py src/text.c charmap.txt | cpp -DREGION_EU -DNATIVE -nost
 python3 tools/preproc.py src/time_attack.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/time_attack.o -std=gnu89 -
 python3 tools/preproc.py src/tourian_escape.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/tourian_escape.o -std=gnu89 -
 python3 tools/preproc.py src/transfer.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/transfer.o -std=gnu89 -
+python3 tools/preproc.py src/transparency.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/transparency.o -std=gnu89 -
+<stdin>: Dans la fonction « DoSramOperation »:
+python3 tools/preproc.py src/update_input.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/update_input.o -std=gnu89 -
+<stdin>:54:33: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068000 » en « 2147483680 » [-Woverflow]
+<stdin>:129:43: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
+<stdin>:134:43: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 <stdin>: Dans la fonction « SramWriteUnchecked »:
 <stdin>:25:23: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 <stdin>:25:16: warning: transtypage vers un pointeur depuis un entier de taille différente [-Wint-to-pointer-cast]
@@ -2892,12 +2898,6 @@ python3 tools/preproc.py src/transfer.c charmap.txt | cpp -DREGION_EU -DNATIVE -
 <stdin>:66:16: warning: transtypage vers un pointeur depuis un entier de taille différente [-Wint-to-pointer-cast]
 <stdin>:69:19: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 <stdin>:69:36: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-python3 tools/preproc.py src/transparency.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/transparency.o -std=gnu89 -
-python3 tools/preproc.py src/update_input.c charmap.txt | cpp -DREGION_EU -DNATIVE -nostdinc -Iinclude/ | gcc -c -x cpp-output -o build/native/update_input.o -std=gnu89 -
-<stdin>: Dans la fonction « DoSramOperation »:
-<stdin>:54:33: warning: la conversion depuis « long unsigned int » vers « u32 » {alias « unsigned int »} change la valeur de « 18446744071562068000 » en « 2147483680 » [-Woverflow]
-<stdin>:129:43: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
-<stdin>:134:43: warning: transtypage d'un pointeur vers un entier de taille différente [-Wpointer-to-int-cast]
 In file included from <stdin>:11:
 include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une variable ayant une portée sur tout le fichier
     7 | extern const s16 sSineTable[2*PI + PI_2];
@@ -2911,7 +2911,7 @@ include/data/generic_data.h:7:1: warning: « sSineTable » modifié par une va
 == [2/3] OK ==
 
 == [3/3] fonctions implicites a retour non-int (dette LP64) ==
-check-implicit-ptr : 306 fonctions implicitement declarees (1167 sites), log build/native-implicit/build.log
+check-implicit-ptr : 306 fonctions implicitement declarees (1167 paires fonction x fichier, gcc ne signale que le 1er appel par .c), log build/native-implicit/build.log
 check-implicit-ptr : PASS (aucune fonction implicite ne retourne autre chose que void / entier <= int)
 == [3/3] OK ==
 

@@ -1,0 +1,5 @@
+check-implicit-ptr : 309 fonctions implicitement declarees (1170 sites), log build/native-implicit/build.log
+  ECHEC  CallGetNoteFrequency : prototype introuvable (include/ ni src/)
+  ECHEC  SramWriteChecked : retourne 'u8 *' -> 'u8 *' (include/sram/sram.h) ; appels : src/save_file.c:890 
+check-implicit-ptr : FAIL (2 fonction(s) a retour non-int appelee(s) sans declaration)
+exit=1

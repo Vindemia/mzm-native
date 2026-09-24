@@ -25,8 +25,9 @@ En complément, non bloquant pour la DoD mais à faire tourner : une cible de bu
 
 ### J2-T0 — Purger la dette LP64 (avant toute exécution)
 
-- [ ] `SramWriteChecked` (`include/sram/sram.h:9`) retourne `u8*` mais est appelée sans déclaration en contexte booléen (`src/save_file.c:890,901`) → en LP64 le retour implicite `int` tronque l'adresse et peut **inverser la condition**. Corriger par l'`#include` manquant, pas par un cast.
-- [ ] Repasser sur les 309 fonctions implicitement déclarées (`docs/ai/native-blockers.md`) : re-contrôler qu'aucune autre ne retourne un pointeur maintenant qu'on va exécuter le code.
+- [x] `SramWriteChecked` (`include/sram/sram.h:9`) retourne `u8*` mais est appelée sans déclaration en contexte booléen (`src/save_file.c:890,901`) → en LP64 le retour implicite `int` tronque l'adresse et peut **inverser la condition**. Corriger par l'`#include` manquant, pas par un cast.
+- [x] Repasser sur les 309 fonctions implicitement déclarées (`docs/ai/native-blockers.md`) : re-contrôler qu'aucune autre ne retourne un pointeur maintenant qu'on va exécuter le code. → `tools/native/check-implicit-ptr.sh` (étape 3 de `verify.sh`) : seul `SramWriteChecked` retournait un pointeur ; `CallGetNoteFrequency` (asm, sans prototype) déclarée. Rouge→vert, logs dans `docs/ai/logs/j2-t0-*`.
+- [ ] **Résiduel à trancher** : 36 fonctions implicites retournent `u8`/`u16` (liste dans `native-blockers.md`). En SysV x86_64 l'ABI ne garantit pas les bits hauts d'un retour < 32 bits ; l'appelant implicite lit tout `eax` → comparaison potentiellement fausse. Hors du seuil fixé pour J2-T0 (« entier ≤ int »), non corrigé.
 
 Fait en premier délibérément : ce bug ne produit aucun message et se manifesterait comme un comportement erratique au milieu du jalon 2, quand dix autres choses seront neuves et suspectes.
 

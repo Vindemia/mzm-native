@@ -92,3 +92,21 @@ Angle mort vérifié : une passe neutralisant la première cause de blocage (`-W
 - `port/` — écarté : vague, ne dit pas que le dossier contient la couche de remplacement du matériel.
 
 **Raison** : au-delà de la contrainte technique ci-dessus, garder la couche plateforme hors de `src/` préserve l'invariant qui a servi tout le jalon 1 — « tout diff sous `src/` est suspect et doit être justifié ». `platform/` reprend le vocabulaire déjà employé dans `ARCHITECTURE.md`.
+
+## D010 — 2026-09-24 — `verify.sh` reconstruit tout (`tidy` GBA, `-B` natif) avant de conclure
+
+**Décision** : l'étape 1 de `verify.sh` fait `make REGION=eu tidy` puis `make -j REGION=eu check` ; l'étape 2 fait `make -B -j -f Makefile.native all`.
+
+**Constat qui l'impose (J2-T0)** : ni le `Makefile` GBA ni `Makefile.native` ne suivent les dépendances aux `.h`. Pire, quand agbcc échoue (`-Werror`), la règle `%.s: %.c` laisse un `.s` partiel plus récent que le `.c` : le `make check` suivant l'assemble et peut afficher `Réussi` sans que le fichier ait réellement compilé. Observé en vrai : un `#include "sram/sram.h"` qui cassait agbcc a d'abord semblé « vert » en incrémental.
+
+**Coût** : rebuild GBA complet ~8 s en `-j12`, `verify.sh` complet ~1 min 45.
+
+**Alternatives écartées** : ajouter le suivi de dépendances (`-MD`) au `Makefile` GBA — touche au build upstream, hors périmètre ; `make -B` sur le GBA — refait aussi les outils via `make_tools.mk`, inutile.
+
+## D011 — 2026-09-24 — Dette LP64 corrigée par déclarations visibles des deux compilateurs, pas par `#ifdef NATIVE`
+
+**Décision** : `src/save_file.c` inclut `sram/sram.h` sans condition ; `include/audio.h` déclare `s32 CallGetNoteFrequency(s32 frequency, u32 pitch);` (fonction asm, signature reprise de `asm/soundcode.s:563`). Les deux cibles voient la même déclaration, cohérent avec D008.
+
+**Point non trivial** : avec le prototype, agbcc (`-Werror`) refuse `SramWriteChecked(sMetZeroSramCheck_Text, …)` (argument `const`, « discards qualifiers »). Corrigé par `(u8*)sMetZeroSramCheck_Text` à l'argument — c'est la convention déjà utilisée par tous les appels de `src/sram_misc.c`. Ce n'est pas le cast interdit par la tâche (cast du **retour**) : le retour `u8*` est désormais correctement typé.
+
+**Alternative écartée** : `#ifdef NATIVE` autour de l'include — zéro risque ROM par construction, mais laisse la cible GBA en déclaration implicite et fait diverger ce que voient les deux compilateurs. Inutile ici puisque la ROM reste bit-identique (vérifié après `tidy`).
